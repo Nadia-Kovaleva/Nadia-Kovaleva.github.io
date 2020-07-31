@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Telegram</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/main.css" />
+    <script
+      src="https://kit.fontawesome.com/46670cf2b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  </head>
+  <body>
+    <section class="content">
+      <div class="left-panel">
+        <header>
+          <div class="menu">
+            <button onclick="myFunction1()" class="btn btn-menu">
+              <i class="fa fa-bars"></i>
+              <i class="logo"></i>
+            </button>
+            <div id="menu" class="menu-content">
+              <a href="#"><i class="fa fa-user-friends"></i>New group</a>
+              <a href="#"><i class="fas fa-id-badge"></i> Contacts</a>
+              <a href="#"><i class="fa fa-cog"></i>Settings</a>
+              <a href="#"><i class="fa fa-question-circle"></i>Telegram FAQ</a>
+              <a href="#"><i class="fa fa-telegram"></i>About</a>
+            </div>
+        </header>
+        <div class="search">
+          <div class="search-i icon">
+            <i class="fas fa-search fa-rotate-90" aria-hidden="true"></i>
+          </div>
+          <input
+            id="search"
+            class="search-chats"
+            type="search"
+            placeholder="Search"
+          />
+        </div>
+        <div class="chats scroll scroll-1">
+          <div class="chat">
+            <div class="chat-info">
+              <div class="image"><img src="./img/img-3.jpg" /></div>
+              <p class="name">Melissa</p>
+              <p class="message j">joined Telegram</p>
+            </div>
+            <div class="status">
+              <p class="date">10:02 PM</p>
+            </div>
+          </div>
+          <div class="chat active">
+            <div class="chat-info">
+              <div class="image"><img src="./img/img-4.jpg" /></div>
+              <p class="name">Group chat</p>
+              <p class="message">
+                <span>Eva: </span> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+              </p>
+            </div>
+            <div class="status">
+              <p class="date">10:00 PM</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="chat-info">
+              <div class="image"><img src="./img/img-1.jpg" /></div>
+              <p class="name">Big group chat</p>
+              <p class="message">
+                <span>John: </span>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+              </p>
+            </div>
+            <div class="status">
+              <p class="date">09:38 PM</p>
+              <p class="count">1050</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="chat-info">
+              <div class="image none1">FR</div>
+              <p class="name">Friends</p>
+              <p class="message">
+                <span>Clar: </span> Yes, i think it would be better if we
+              </p>
+            </div>
+            <div class="status">
+              <p class="date">08:22 PM</p>
+              <p class="count">150</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="chat-info">
+              <div class="image"><img src="./img/img-2.jpg" /></div>
+              <p class="name">Daria</p>
+              <p class="message">Wow!</p>
+            </div>
+            <div class="status">
+              <p class="date">06:02 PM</p>
+              <p class="count">10</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="chat-info">
+              <div class="image none2">J</div>
+              <p class="name">Jack</p>
+              <p class="message">Text me when you're free.</p>
+            </div>
+            <div class="status">
+              <p class="date">Wed</p>
+              <p class="count">23</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="chat-info">
+              <div class="image"><img src="./img/img-5.jpg" /></div>
+              <p class="name">Anna</p>
+              <p class="message j">joined Telegram</p>
+            </div>
+            <div class="status">
+              <p class="date">Wed</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="chat-info">
+              <div class="image none3">Ch</div>
+              <p class="name">Chat</p>
+              <p class="message">Bye bye</p>
+            </div>
+            <div class="status">
+              <p class="date">Mon</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="chat-info">
+              <div class="image"><img src="./img/img-6.jpg" /></div>
+              <p class="name">Kirill</p>
+              <p class="message">And as for the weekend, i think</p>
+            </div>
+            <div class="status">
+              <p class="date">7/11/20</p>
+              <p class="count">25</p>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="chat-info">
+              <div class="image none4">D</div>
+              <p class="name">Dad</p>
+              <p class="message">Ok.</p>
+            </div>
+            <div class="status">
+              <p class="date">7/16/20</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-panel">
+        <div class="top-bar">
+          <div class="left-side">
+            <p class="chat-name">
+              Group chat
+              <span class="members">46 members</span>
+            </p>
+          </div>
+          <div class="right-side">
+            <div class="more-options">
+              <button onclick="myFunction()" class="btn btn-options">
+                <i class="fa fa-ellipsis-v"></i>
+              </button>
+              <a href="#search" class="btn btn-search">
+                <i class="fa fa-search"></i>
+              </a>
+              <div id="myDropdown" class="more-options-content">
+                <a href="#">Select messages</a>
+                <hr />
+                <a href="#">Photos</a>
+                <a href="#">Videos</a>
+                <a href="#">Files</a>
+                <a href="#">Audio</a>
+                <a href="#">Shared links</a>
+                <a href="#">Voice messages</a>
+                <a href="#">Video messages</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chat-window scroll scroll-2">
+          <div class="day">
+            <div class="day-head">
+              <span>Friday, July 17, 2020</span>
+            </div>
+            <div class="message-items">
+              <div class="message-item">
+                <div class="select">
+                  <i class="fa fa-select select-icon" aria-hidden="true"></i>
+                </div>
+                <div class="message-content-side">
+                  <div class="user-image"><img src="./img/img-7.jpg" /></div>
+                  <p class="user-name">Eva</p>
+                  <p class="message-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit accusantium eum sapiente repellat vero optio excepturi
+                    iusto repudiandae fugiat dolor.
+                  </p>
+                </div>
+                <div class="message-time">
+                  <p>1:42 PM</p>
+                </div>
+              </div>
+              <div class="message-item">
+                <div class="select">
+                  <i class="fa fa-select select-icon"></i>
+                </div>
+                <div class="message-content-side">
+                  <div class="user-image"><img src="./img/img-2.jpg" /></div>
+                  <p class="user-name">Daria</p>
+                  <p class="message-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <p class="message-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit accusantium eum sapiente repellat vero optio excepturi
+                    iusto repudiandae fugiat dolor.
+                  </p>
+                </div>
+                <div class="message-time">
+                  <p>1:42 PM</p>
+                </div>
+              </div>
+
+              <div class="message-item">
+                <div class="select">
+                  <i class="fa fa-select select-icon"></i>
+                </div>
+                <div class="message-content-side">
+                  <div class="user-image"><img src="./img/img-7.jpg" /></div>
+                  <p class="user-name">Eva</p>
+                  <p class="message-content">
+                    Lorem ipsumdolor sit amet consectetur adipisicing elit.
+                    Velit accusantium eum sapiente repellat vero optio excepturi
+                    iusto repudiandae fugiat dolor.</p>
+
+                    <iframe width="250" height="180" class="message-content" src="https://www.youtube.com/embed/7X8II6J-6mU" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                  
+                </div>
+                <div class="message-time">
+                  <p>1:45 PM</p>
+                </div>
+              </div>
+
+              <div class="message-item">
+                <div class="select">
+                  <i class="fa fa-select select-icon"></i>
+                </div>
+                <div class="message-content-side">
+                  <div class="user-image"><img src="./img/img-2.jpg" /></div>
+                  <p class="user-name">Daria</p>
+                  <p class="message-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit accusantium eum sapiente repellat vero optio excepturi
+                    iusto repudiandae fugiat dolor.
+                  </p>
+                  <p class="message-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+                <div class="message-time">
+                  <p>1:42 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="day">
+            <div class="day-head">
+              <span>Saturday, July 25, 2020</span>
+            </div>
+            <div class="message-items">
+              <div class="message-item">
+                <div class="select">
+                  <i class="fa fa-select select-icon" aria-hidden="true"></i>
+                </div>
+                <div class="message-content-side">
+                  <div class="user-image"><img src="./img/img-6.jpg" /></div>
+                  <p class="user-name">Kirill</p>
+                  <p class="message-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit accusantium eum sapiente repellat vero optio excepturi
+                    iusto repudiandae fugiat dolor.
+                  </p>
+                </div>
+                <div class="message-time">
+                  <p>1:42 PM</p>
+                </div>
+              </div>
+              <div class="message-item">
+                <div class="select">
+                  <i class="fa fa-select select-icon" aria-hidden="true"></i>
+                </div>
+                <div class="message-content-side">
+                  <div class="user-image"><img src="./img/img-2.jpg" /></div>
+                  <p class="user-name">Daria</p>
+                  <img class="message-content" width="180px" height="250px" src="/img/photo.jpg">                </img>
+                </div>
+                <div class="message-time">
+                  <p>1:42 PM</p>
+                </div>
+              </div>
+              <div class="message-item">
+                <div class="select">
+                  <i class="fa fa-select select-icon"></i>
+                </div>
+                <div class="message-content-side">
+                  <div class="user-image"><img src="./img/img-5.jpg" /></div>
+                  <p class="user-name">Anna</p>
+                  <p class="message-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <p class="message-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit accusantium eum sapiente repellat vero optio excepturi
+                    iusto repudiandae fugiat dolor.
+                  </p>
+                </div>
+                <div class="message-time">
+                  <p>1:42 PM</p>
+                </div>
+              </div>
+
+              <div class="message-item">
+                <div class="select">
+                  <i class="fa fa-select select-icon"></i>
+                </div>
+                <div class="message-content-side">
+                  <div class="user-image"><img src="./img/img-6.jpg" /></div>
+                  <p class="user-name">Kirill</p>
+                  <p class="message-content">
+                    Lorem ipsumdolor sit amet consectetur adipisicing elit.
+                    Velit accusantium eum sapiente repellat vero optio excepturi
+                    iusto repudiandae fugiat dolor.
+                  </p>
+                </div>
+                <div class="message-time">
+                  <p>1:45 PM</p>
+                </div>
+              </div>
+
+              <div class="message-item">
+                <div class="select">
+                  <i class="fa fa-select select-icon"></i>
+                </div>
+                <div class="message-content-side">
+                  <div class="user-image"><img src="./img/img-5.jpg" /></div>
+                  <p class="user-name">Anna</p>
+                  <p class="message-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit accusantium eum sapiente repellat vero optio excepturi
+                    iusto repudiandae fugiat dolor.
+                  </p>
+                  <p class="message-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+                <div class="message-time">
+                  <p>1:42 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="day">
+            <div class="day-head">
+              <span>Wednesday, July 29, 2020</span>
+            </div>
+            <div class="message-items">
+              <div class="message-item">
+                <i class="select select-i"></i>
+                <div class="message-content-side">
+                  <div class="user-image"><img src="./img/img-2.jpg" /></div>
+                  <p class="user-name">Daria</p>
+                  <p class="message-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <p class="message-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit accusantium eum sapiente repellat vero optio excepturi
+                    iusto repudiandae fugiat dolor.
+                  </p>
+                </div>
+                <div class="message-time">
+                  <p>1:42 PM</p>
+                </div>
+              </div>
+
+              <div class="message-item">
+                <div class="select">
+                  <i class="fa fa-select select-icon"></i>
+                </div>
+                <div class="message-content-side">
+                  <div class="user-image"><img src="./img/img-6.jpg" /></div>
+                  <p class="user-name">Kirill</p>
+                  <p class="message-content">
+                    Lorem ipsumdolor sit amet consectetur adipisicing elit.
+                    Velit accusantium eum sapiente repellat vero optio excepturi
+                    iusto repudiandae fugiat dolor.
+                  </p>
+                </div>
+                <div class="message-time">
+                  <p>1:45 PM</p>
+                </div>
+              </div>
+
+              <div class="message-item">
+                <div class="select">
+                  <i class="fa fa-select select-icon"></i>
+                </div>
+                <div class="message-content-side">
+                  <div class="user-image"><img src="./img/img-7.jpg" /></div>
+                  <p class="user-name">Eva</p>
+                  <p class="message-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit accusantium eum sapiente repellat vero optio excepturi
+                    iusto repudiandae fugiat dolor.
+                  </p>
+                  <p class="message-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+                <div class="message-time">
+                  <p>10:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reply-bar">
+          <div class="my-image"><img src="./img/img-my.jpg" /></div>
+          <div class="reply-content">
+            <div class="reply">
+              <input
+                type="text"
+                class="reply-msg"
+                placeholder="Write a message..."
+              /><i class="far fa-smile"></i>
+            </div>
+
+            <div class="extra-features">
+              <div class="file">
+                <i class="icon fas fa-sticky-note fa-rotate-270 i-file"></i>
+              </div>
+              <div class="camera">
+                <i class="icon fas fa-camera i-camera"></i>
+              </div>
+              <div class="record">
+                <i class="icon fas fa-microphone i-record"></i>
+              </div>
+              <div class="emoji-panel">
+                <a class="emoji-btn" data-code="1f602"
+                  ><i class="emoji-sprite joy-i"></i
+                ></a>
+                <a class="emoji-btn" data-code="1f602"
+                  ><i class="emoji-sprite kiss-i"></i
+                ></a>
+                <a class="emoji-btn" data-code="1f602"
+                  ><i class="emoji-sprite tong1-i"></i
+                ></a>
+                <a class="emoji-btn" data-code="1f602"
+                  ><i class="emoji-sprite smile-i"></i
+                ></a>
+                <a class="emoji-btn" data-code="1f602"
+                  ><i class="emoji-sprite purple-i"></i
+                ></a>
+                <a class="emoji-btn" data-code="1f602"
+                  ><i class="emoji-sprite tong2-i"></i
+                ></a>
+                <a class="emoji-btn" data-code="1f602"
+                  ><i class="emoji-sprite up-i"></i
+                ></a>
+              </div>
+              <div class="send">
+                <button type="submit" class="btn btn-send">
+                  SEND
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="group-image"><img src="./img/img-4.jpg" /></div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      function myFunction1() {
+        document.getElementById("menu").classList.toggle("show");
+      }
+      window.onclick = function (event) {
+        if (!event.target.matches(".btn-options")) {
+          var dropdowns = document.getElementsByClassName(
+            "more-options-content"
+          );
+          
+          } else if (!event.target.matches(".btn-menu")) {
+          var dropdowns1 = document.getElementsByClassName("menu-content");
+          
+          }for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains("show")) {
+            openDropdown.classList.remove("show");
+          } 
+        }
+      };
+    </script>
+  </body>
+</html>
