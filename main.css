@@ -80,7 +80,7 @@ button {
 .logo {
   width: 74px;
   height: 20px;
-  background-image: url(./Telegram.svg);
+  background-image: url(Telegram.svg);
   margin-top: 2px;
   float: left;
 }
