@@ -677,19 +677,32 @@ if (document.querySelector(".offers-slider")) {
     prevButton: ".offers-slider__prev",
     nextButton: ".offers-slider__next",
     controlsContainer: ".offers-slider-controls",
-    769: {
-      items: 3.8,
-      gutter: 150
-    },
-    600: {
-      items: 2,
-      gutter: 35,
-      slideBy: "page"
-    },
-    320: {
-      items: 1,
-      gutter: 35,
-      slideBy: .5
+    responsive: {
+      1279: {
+        items: 3.8,
+        slideBy: 1,
+        gutter: 150
+      },
+      1000: {
+        items: 3.1,
+        slideBy: 1,
+        gutter: 100
+      },
+      900: {
+        items: 2.9,
+        slideBy: 1,
+        gutter: 80
+      },
+      768: {
+        items: 2.8,
+        slideBy: 1,
+        gutter: 70
+      },
+      320: {
+        items: 4.8,
+        slideBy: 1,
+        gutter: 100
+      }
     }
   });
 }
@@ -1251,9 +1264,19 @@ if (document.querySelector(".services-preview-slider")) {
     nextButton: ".services-preview-slider__next--restaurant",
     controlsContainer: ".services-preview-slider-controls--restaurant",
     responsive: {
-      769: {
+      1210: {
         items: 1.9,
+        slideBy: 1,
         gutter: 50
+      },
+      1110: {
+        slideBy: 1,
+        gutter: 30
+      },
+      830: {
+        items: 1.8,
+        slideBy: 1,
+        gutter: 30
       },
       320: {
         items: 1,
@@ -1274,9 +1297,19 @@ if (document.querySelector(".services-preview-slider")) {
     nextButton: ".services-preview-slider__next--conference",
     controlsContainer: ".services-preview-slider-controls--conference",
     responsive: {
-      769: {
+      1210: {
         items: 1.9,
+        slideBy: 1,
         gutter: 50
+      },
+      1110: {
+        slideBy: 1,
+        gutter: 30
+      },
+      830: {
+        items: 1.8,
+        slideBy: 1,
+        gutter: 30
       },
       320: {
         items: 1,
@@ -1297,9 +1330,19 @@ if (document.querySelector(".services-preview-slider")) {
     nextButton: ".services-preview-slider__next--fitness",
     controlsContainer: ".services-preview-slider-controls--fitness",
     responsive: {
-      769: {
+      1210: {
         items: 1.9,
+        slideBy: 1,
         gutter: 50
+      },
+      1110: {
+        slideBy: 1,
+        gutter: 30
+      },
+      830: {
+        items: 1.8,
+        slideBy: 1,
+        gutter: 30
       },
       320: {
         items: 1,
