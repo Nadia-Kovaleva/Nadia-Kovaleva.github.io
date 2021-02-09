@@ -858,9 +858,9 @@ body section:nth-child(2n) {
 }
 
 .about-text {
-  flex: 0 0 880px;
-  width: 880px;
-  max-width: 880px;
+  flex: 0 0 74%;
+  width: 74%;
+  max-width: 74%;
   font-size: 40px;
   line-height: 40px;
   font-weight: 300;
@@ -878,6 +878,7 @@ body section:nth-child(2n) {
 .about-video {
   position: relative;
   width: 100vw;
+  height: 500px;
   margin-bottom: 127px;
 }
 
@@ -916,15 +917,15 @@ body section:nth-child(2n) {
 }
 
 .about-info-col {
-  flex: 0 0 450px;
-  width: 450px;
-  max-width: 450px;
+  flex: 0 0 37.5%;
+  width: 37.5%;
+  max-width: 37.5%;
 }
 
 .about-info-col:last-child {
-  flex: 0 0 700px;
-  width: 700px;
-  max-width: 700px;
+  flex: 0 0 60%;
+  width: 60%;
+  max-width: 60%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1018,7 +1019,7 @@ body section:nth-child(2n) {
 }
 
 .about-gallery .overlay--active + .mp .about-gallery-slider__prev {
-  top: 300px;
+  top: 320px;
 }
 
 .about-gallery .mp--about-gallery {
@@ -1261,7 +1262,7 @@ body section:nth-child(2n) {
 
 .conference-slider-image {
   max-width: 750px;
-  height: 405px;
+  max-height: 405px;
   margin-top: 30px;
   overflow: hidden;
 }
@@ -1383,17 +1384,17 @@ body section:nth-child(2n) {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: normal;
-  justify-content: normal;
+  justify-content: space-between;
 }
 
 .conference-booking-col {
-  flex: 0 0 475px;
-  width: 475px;
-  max-width: 475px;
+  flex: 0 0 55%;
+  width: 55%;
+  max-width: 55%;
 }
 
 .conference-booking-col:last-child {
-  padding-left: 280px;
+  max-width: 320px;
   margin-top: 3px;
 }
 
@@ -1429,7 +1430,7 @@ body section:nth-child(2n) {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: normal;
-  justify-content: normal;
+  justify-content: space-between;
 }
 
 .conference-info-col {
@@ -1439,7 +1440,7 @@ body section:nth-child(2n) {
 }
 
 .conference-info-col:last-child {
-  padding-left: 150px;
+  max-width: 420px;
   margin-top: 9px;
 }
 
@@ -1566,6 +1567,12 @@ body section:nth-child(2n) {
   flex: 0 0 50%;
   width: 50%;
   max-width: 50%;
+}
+
+.contacts-info__item--big {
+  flex: 0 0 90%;
+  width: 90%;
+  max-width: 90%;
 }
 
 .contacts-info-row {
@@ -1832,7 +1839,7 @@ body section:nth-child(2n) {
 
 .fitness-gallery-slider-image {
   max-width: 750px;
-  height: 405px;
+  max-height: 405px;
   margin-top: 30px;
   overflow: hidden;
 }
@@ -2791,9 +2798,9 @@ body section:nth-child(2n) {
 }
 
 .hotel-services__item {
-  flex: 0 0 450px;
-  width: 450px;
-  max-width: 450px;
+  flex: 0 0 33.3%;
+  width: 33.3%;
+  max-width: 33.3%;
   margin-bottom: 75px;
   padding: 0 75px;
 }
@@ -3330,7 +3337,7 @@ body section:nth-child(2n) {
 
 .restaurants-slider-image {
   max-width: 750px;
-  height: 405px;
+  max-height: 405px;
   margin-top: 30px;
   overflow: hidden;
 }
@@ -3461,7 +3468,7 @@ body section:nth-child(2n) {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: normal;
-  justify-content: normal;
+  justify-content: space-between;
 }
 
 .restaurants-info-col {
@@ -3471,7 +3478,7 @@ body section:nth-child(2n) {
 }
 
 .restaurants-info-col:last-child {
-  padding-left: 150px;
+  max-width: 420px;
   margin-top: 9px;
 }
 
@@ -4060,7 +4067,7 @@ body section:nth-child(2n) {
 
 .salon-gallery-slider-image {
   max-width: 750px;
-  height: 405px;
+  max-height: 405px;
   margin-top: 30px;
   overflow: hidden;
 }
@@ -4268,8 +4275,8 @@ body section:nth-child(2n) {
 
 .salon-price-plus {
   display: none;
-  width: 48px;
-  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   border-radius: 50%;
   background: #fff url(../img/svg/add-gold.svg) no-repeat center;
 }
@@ -4748,7 +4755,6 @@ body section:nth-child(2n) {
   }
 
   .hotel-services-row {
-    justify-content: normal;
     margin: 0 -75px;
   }
 
@@ -4788,7 +4794,108 @@ body section:nth-child(2n) {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .about .about-info-image:before {
+    display: none;
+  }
+
+  .conference-row {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .conference-slider-container {
+    flex: 0 0 62.5%;
+    width: 62.5%;
+    max-width: 62.5%;
+    margin-right: 0;
+  }
+
+  .conference-features {
+    margin: 0;
+  }
+
+  .contacts-col {
+    flex: 0 0 45%;
+    width: 45%;
+    max-width: 45%;
+  }
+
+  .contacts-col:last-child {
+    flex: 0 0 55%;
+    width: 55%;
+    max-width: 55%;
+  }
+
+  .contacts-map__item {
+    max-width: 90%;
+    max-height: 300px;
+  }
+
+  .restaurants-row {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .restaurants-slider-container {
+    flex: 0 0 62.5%;
+    width: 62.5%;
+    max-width: 62.5%;
+    margin-right: 0;
+  }
+
+  .restaurants-features {
+    margin: 0;
+  }
+}
+
 @media only screen and (max-width: 1100px) {
+  .about-gallery-slider-controls {
+    max-width: 85%;
+  }
+
+  .about-gallery-slider__prev {
+    left: -9vw;
+  }
+
+  .about-gallery-slider__next {
+    left: calc(100vw - 190px);
+  }
+
+  .fitness-row {
+    justify-content: space-between;
+  }
+
+  .fitness-back {
+    margin: 0;
+  }
+
+  .fitness-content {
+    flex: 0 0 75%;
+    width: 75%;
+    max-width: 75%;
+  }
+
+  .fitness-gallery-slider-container {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .fitness-price-col {
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .fitness-price-col:last-child {
+    justify-content: flex-end;
+  }
+
+  .fitness-price-sum {
+    margin-right: 40px;
+  }
+
   .gallery-row {
     flex-wrap: wrap;
   }
@@ -4804,6 +4911,79 @@ body section:nth-child(2n) {
     flex: 0 0 57%;
     width: 57%;
     max-width: 57%;
+  }
+
+  .hotel-services-row {
+    margin: 0 -50px;
+  }
+
+  .hotel-services__item {
+    padding: 0 50px;
+  }
+
+  .salon-row {
+    justify-content: space-between;
+  }
+
+  .salon-back {
+    margin: 0;
+  }
+
+  .salon-content {
+    flex: 0 0 75%;
+    width: 75%;
+    max-width: 75%;
+  }
+
+  .salon-gallery-slider-container {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .salon-price-col {
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .salon-price-col:last-child {
+    justify-content: flex-end;
+  }
+
+  .salon-price-sum {
+    margin-right: 40px;
+  }
+
+  .transfer-row {
+    justify-content: space-between;
+  }
+
+  .transfer-back {
+    margin: 0;
+  }
+
+  .transfer-content {
+    flex: 0 0 75%;
+    width: 75%;
+    max-width: 75%;
+  }
+
+  .transfer-price-col {
+    flex: 0 0 40%;
+    width: 40%;
+    max-width: 40%;
+  }
+
+  .transfer-price-col:last-child {
+    flex: 0 0 60%;
+    width: 60%;
+    max-width: 60%;
+    justify-content: flex-end;
+  }
+
+  .transfer-price-sum {
+    margin-right: 20px;
   }
 }
 
@@ -4904,6 +5084,22 @@ body section:nth-child(2n) {
     margin-top: 0;
   }
 
+  .about-text {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-video {
+    height: 45vw;
+  }
+
+  .about-info-col {
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 50%;
+  }
+
   .features {
     margin-top: 43px;
   }
@@ -4987,6 +5183,31 @@ body section:nth-child(2n) {
 }
 
 @media only screen and (max-width: 950px) {
+  .body .main {
+    margin-top: 70px;
+  }
+
+  .contacts-row {
+    flex-wrap: wrap;
+  }
+
+  .contacts-col {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contacts-col:last-child {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contacts-map__item {
+    max-width: 540px;
+    max-height: 380px;
+  }
+
   .header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
@@ -5226,6 +5447,27 @@ body section:nth-child(2n) {
   }
 }
 
+@media only screen and (max-width: 910px) {
+  .fitness-price-list {
+    justify-content: space-around;
+  }
+
+  .fitness-price-list__item {
+    padding: 0 0 24px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hotel-services-row {
+    justify-content: space-between;
+    margin: 0 -25px;
+  }
+
+  .hotel-services__item {
+    padding: 0 25px;
+  }
+}
+
 @media only screen and (max-width: 890px) {
   .rooms-preview__title {
     font-size: 35px;
@@ -5243,18 +5485,6 @@ body section:nth-child(2n) {
 }
 
 @media only screen and (max-width: 830px) {
-  .hotel-services-row {
-    justify-content: space-between;
-    margin: 0 -40px;
-  }
-
-  .hotel-services__item {
-    flex: 0 0 380px;
-    width: 380px;
-    max-width: 380px;
-    padding: 0 40px;
-  }
-
   .services {
     margin-bottom: 0;
     padding: 60px 0 0;
@@ -5413,10 +5643,6 @@ body section:nth-child(2n) {
     width: 100%;
   }
 
-  .body .main {
-    margin-top: 70px;
-  }
-
   .section-title {
     font-size: 30px;
     line-height: 40px;
@@ -5472,6 +5698,7 @@ body section:nth-child(2n) {
   .about-gallery-slider-controls {
     position: relative;
     width: 100vw;
+    max-width: 100vw;
     margin: 0 0 0 -16px;
   }
 
@@ -5952,6 +6179,7 @@ body section:nth-child(2n) {
 
   .fitness-price-list {
     margin: 26px 0 29px;
+    justify-content: normal;
     overflow-x: scroll;
   }
 
@@ -7180,9 +7408,6 @@ body section:nth-child(2n) {
   }
 
   .transfer-price-col {
-    flex: 0 0 20%;
-    width: 20%;
-    max-width: 20%;
     min-height: 67px;
     display: flex;
     flex-direction: column;
@@ -7198,6 +7423,12 @@ body section:nth-child(2n) {
     max-width: 80%;
     padding: 7px 0 12px 19px;
     border-right: 1px solid #63636f;
+  }
+
+  .transfer-price-col:last-child {
+    flex: 0 0 20%;
+    width: 20%;
+    max-width: 20%;
   }
 
   .transfer-price__name {

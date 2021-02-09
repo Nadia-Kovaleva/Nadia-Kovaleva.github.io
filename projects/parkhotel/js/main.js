@@ -200,8 +200,12 @@ if (document.querySelector('.about-gallery__item')) {
   var overlay = document.querySelector('.overlay');
   var about_gallery_items = document.querySelectorAll('.about-gallery__item');
   about_gallery_items.forEach(function (item) {
-    return item.addEventListener('click', function () {
-      overlay.classList.toggle("overlay--active");
+    return item.addEventListener('click', function (el) {
+      el.preventDefault();
+
+      if (document.documentElement.clientWidth > 768) {
+        overlay.classList.toggle("overlay--active");
+      }
     });
   });
   document.querySelector('.mp-close').addEventListener('click', function () {
