@@ -3916,13 +3916,13 @@ body section:nth-child(2n) {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: normal;
-  justify-content: space-around;
+  justify-content: normal;
   margin-bottom: 42px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .room-info__title {
-  padding: 0 0 22px;
+  padding: 0 60px 22px;
   font-size: 15px;
   line-height: 30px;
   text-decoration: none;
@@ -5096,6 +5096,14 @@ body section:nth-child(2n) {
 
   .restaurants-features {
     margin: 0;
+  }
+
+  .room-info-titles {
+    justify-content: space-around;
+  }
+
+  .room-info__title {
+    padding: 0 0 22px;
   }
 }
 
