@@ -699,17 +699,6 @@ body section:nth-child(2n) {
   background: #a18f57;
   cursor: pointer;
   transition: background-color 400ms;
-  /*.btn-anim {
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background-color: #ab995c;
-    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-  }*/
 }
 
 .btn--transparent {
@@ -724,6 +713,10 @@ body section:nth-child(2n) {
 
 .btn--transparent:hover .btn-icon {
   background-image: url(../img/svg/dish.svg);
+}
+
+.btn--transparent .btn-text {
+  left: -5px;
 }
 
 .btn-text {
@@ -744,10 +737,6 @@ body section:nth-child(2n) {
 
 .btn:hover {
   background-color: #b09d5f;
-  /*.btn-anim {
-      width: 225%;
-      height: 562.5px;
-    }*/
 }
 
 .btn:active {
@@ -759,7 +748,7 @@ body section:nth-child(2n) {
   border-radius: 50%;
   background-color: #968651;
   transform: scale(0);
-  animation: ripple 600ms linear;
+  animation: ripple 500ms ease-in-out;
 }
 
 @keyframes ripple {
@@ -4054,15 +4043,17 @@ body section:nth-child(2n) {
 }
 
 .rooms-list__item {
+  position: relative;
   display: block;
   padding: 10px 0 10px 38px;
   margin-bottom: 10px;
+  overflow: hidden;
   text-decoration: none;
 }
 
 .rooms-list__item--active {
   border-left: 2px solid #a18f57;
-  padding-left: 37px;
+  margin-left: -2px;
 }
 
 .rooms-list__item--active .rooms__title {
@@ -4071,8 +4062,33 @@ body section:nth-child(2n) {
 
 .rooms-list__item:hover {
   border-left: 2px solid #a18f57;
-  padding-left: 37px;
+  margin-left: -2px;
   background: rgba(255, 255, 255, 0.05);
+}
+
+.rooms-list__item-inner {
+  position: relative;
+  z-index: 5;
+  display: block;
+}
+
+.rooms-list__item:active {
+  background-color: #373739;
+}
+
+.rooms-list__item span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #373739;
+  transform: scale(0);
+  animation: ripple 500ms ease-in-out;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
 }
 
 .rooms__title {
@@ -4624,6 +4640,7 @@ body section:nth-child(2n) {
 }
 
 .services-list__item {
+  margin-bottom: -1px;
   padding: 0 20px 22px;
   font-size: 15px;
   line-height: 30px;

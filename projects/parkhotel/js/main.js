@@ -1148,9 +1148,31 @@ if (fixed_col) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
+/* harmony import */ var _js_import_createRipple__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../js/import/createRipple */ "./src/js/import/createRipple.js");
  //import { tns } from "tiny-slider";
 
 
+
+/*function createRipple(event) {
+  const button = event.currentTarget;
+  console.log("click");
+  const circle = document.createElement("span");
+  const diameter = Math.max(button.clientWidth, button.clientHeight);
+  const radius = diameter / 2;
+
+  circle.style.width = circle.style.height = `${diameter}px`;
+  circle.style.left = `${event.clientX - button.getBoundingClientRect().left - radius}px`;
+  circle.style.top = `${event.clientY - button.getBoundingClientRect().top - radius}px`;
+  circle.classList.add("ripple");
+
+  const ripple = button.getElementsByClassName("ripple")[0];
+
+  if (ripple) {
+    ripple.remove();
+  }
+
+  button.appendChild(circle);
+}*/
 
 if (document.querySelector(".rooms-preview-slider")) {
   var slider_standard1 = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
@@ -1242,18 +1264,22 @@ if (document.querySelector(".rooms-preview-slider")) {
 var rooms_list_items = document.querySelectorAll(".rooms-list__item");
 rooms_list_items.forEach(function (link) {
   link.addEventListener("click", function (event) {
-    if (document.documentElement.clientWidth > 768) {
-      event.preventDefault();
-    }
+    event.preventDefault();
+    setTimeout(function () {
+      if (document.documentElement.clientWidth > 768) {
+        event.preventDefault();
+      }
 
-    var prev_room = document.querySelector(".rooms-preview-list__item--active");
-    var prev_link = document.querySelector(".rooms-list__item--active");
-    var room = document.querySelector(link.getAttribute("href"));
-    room.classList.toggle("rooms-preview-list__item--active");
-    prev_room.classList.toggle("rooms-preview-list__item--active");
-    prev_link.classList.toggle("rooms-list__item--active");
-    link.classList.toggle("rooms-list__item--active");
+      var prev_room = document.querySelector(".rooms-preview-list__item--active");
+      var prev_link = document.querySelector(".rooms-list__item--active");
+      var room = document.querySelector(link.getAttribute("href"));
+      room.classList.toggle("rooms-preview-list__item--active");
+      prev_room.classList.toggle("rooms-preview-list__item--active");
+      prev_link.classList.toggle("rooms-list__item--active");
+      link.classList.toggle("rooms-list__item--active");
+    }, 500);
   });
+  link.addEventListener("click", _js_import_createRipple__WEBPACK_IMPORTED_MODULE_1__["createRipple"]);
 });
 var rooms_detail = document.querySelectorAll('.rooms-preview-info-detail');
 rooms_detail.forEach(function (el) {
@@ -1512,6 +1538,39 @@ if (document.querySelector('.welcome-down')) {
 
 /***/ }),
 
+/***/ "./src/js/import/createRipple.js":
+/*!***************************************!*\
+  !*** ./src/js/import/createRipple.js ***!
+  \***************************************/
+/*! exports provided: createRipple */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createRipple", function() { return createRipple; });
+function createRipple(event) {
+  var button = event.currentTarget;
+  console.log("click");
+  var circle = document.createElement("span");
+  var diameter = Math.max(button.clientWidth, button.clientHeight);
+  var radius = diameter / 2;
+  circle.style.width = circle.style.height = "".concat(diameter, "px");
+  circle.style.left = "".concat(event.clientX - button.getBoundingClientRect().left - radius, "px");
+  circle.style.top = "".concat(event.clientY - button.getBoundingClientRect().top - radius, "px");
+  circle.classList.add("ripple");
+  var ripple = button.getElementsByClassName("ripple")[0];
+
+  if (ripple) {
+    ripple.remove();
+  }
+
+  button.appendChild(circle);
+}
+
+
+
+/***/ }),
+
 /***/ "./src/js/import/modules.js":
 /*!**********************************!*\
   !*** ./src/js/import/modules.js ***!
@@ -1618,6 +1677,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _import_modules__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./import/modules */ "./src/js/import/modules.js");
+/* harmony import */ var _import_createRipple__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./import/createRipple */ "./src/js/import/createRipple.js");
 function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -1625,25 +1685,6 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 
-
-function createRipple(event) {
-  console.log("click");
-  var button = event.currentTarget;
-  var circle = document.createElement("span");
-  var diameter = Math.max(button.clientWidth, button.clientHeight);
-  var radius = diameter / 2;
-  circle.style.width = circle.style.height = "".concat(diameter, "px");
-  circle.style.left = "".concat(event.clientX - button.getBoundingClientRect().left - radius, "px");
-  circle.style.top = "".concat(event.clientY - button.getBoundingClientRect().top - radius, "px");
-  circle.classList.add("ripple");
-  var ripple = button.getElementsByClassName("ripple")[0];
-
-  if (ripple) {
-    ripple.remove();
-  }
-
-  button.appendChild(circle);
-}
 
 var buttons = document.getElementsByClassName("btn");
 
@@ -1654,34 +1695,15 @@ try {
   for (_iterator.s(); !(_step = _iterator.n()).done;) {
     var button = _step.value;
     button.addEventListener("click", function (event) {
-      event.preventDefault();
-      console.log(event.target);
-      setTimeout(function () {
-        console.log(event.target.href);
-        window.location = event.target.href ? event.target.href : event.target.parentElement.href;
-      }, 600);
-    });
-    button.addEventListener("click", createRipple);
-  }
-  /*(function() {
-    const buttons = document.querySelectorAll(".btn");
-  
-    buttons.forEach(button => {
-      ["mouseenter", "mouseout"].forEach(evt => {
-        button.addEventListener(evt, e => {
-          let parentOffset = button.getBoundingClientRect(),
-              relX = e.pageX - parentOffset.left,
-              relY = e.pageY - parentOffset.top;
-  
-          const span = button.getElementsByTagName("span");
-  
-          span[0].style.top = relY + "px";
-          span[0].style.left = relX + "px";
-        });
-      });
-    });
-  })();*/
+      event.preventDefault(); //console.log(event.target);
 
+      setTimeout(function () {
+        //console.log(event.target.href);
+        window.location = event.target.href ? event.target.href : event.target.parentElement.href;
+      }, 500);
+    });
+    button.addEventListener("click", _import_createRipple__WEBPACK_IMPORTED_MODULE_1__["createRipple"]);
+  }
 } catch (err) {
   _iterator.e(err);
 } finally {
