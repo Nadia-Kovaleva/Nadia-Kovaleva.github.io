@@ -602,6 +602,10 @@ ul {
   list-style: none;
 }
 
+::selection {
+  background: #a18f57;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -673,46 +677,96 @@ body section:nth-child(2n) {
 }
 
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  display: block;
   overflow: hidden;
-  max-width: 100%;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  max-height: 60px;
   margin: 0;
-  padding: 18px 40px;
   border: none;
-  vertical-align: middle;
+  outline: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   user-select: none;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 60px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
   background: #a18f57;
   cursor: pointer;
+  transition: background-color 400ms;
+  /*.btn-anim {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #ab995c;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }*/
 }
 
 .btn--transparent {
-  padding: 16px 38px;
   border: 1px solid #a18f57;
   color: #a18f57;
   background-color: transparent;
+}
+
+.btn--transparent:hover {
+  color: #fff;
+}
+
+.btn--transparent:hover .btn-icon {
+  background-image: url(../img/svg/dish.svg);
+}
+
+.btn-text {
+  position: relative;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-icon {
   width: 24px;
   height: 24px;
   margin-right: 5px;
-  background: top url(../img/svg/dish.svg) no-repeat;
+  background: top url(../img/svg/dish-gold.svg) no-repeat;
   background-size: contain;
 }
 
-.btn:hover,
+.btn:hover {
+  background-color: #b09d5f;
+  /*.btn-anim {
+      width: 225%;
+      height: 562.5px;
+    }*/
+}
+
 .btn:active {
-  background: #ab995c;
+  background-color: #a18f57;
+}
+
+.btn span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #968651;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
 }
 
 .form-group {
@@ -3110,7 +3164,7 @@ body section:nth-child(2n) {
 .offers-slider-image {
   position: relative;
   display: block;
-  max-width: 100%;
+  max-width: 300px;
   max-height: 150px;
   height: 150px;
   overflow: hidden;
@@ -5041,6 +5095,10 @@ body section:nth-child(2n) {
 
   .services-preview-slider-controls {
     max-width: 520px;
+  }
+
+  .services-info__buttons {
+    max-width: 95%;
   }
 }
 
