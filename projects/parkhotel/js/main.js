@@ -205,11 +205,13 @@ if (document.querySelector('.about-gallery__item')) {
 
       if (document.documentElement.clientWidth > 768) {
         overlay.classList.toggle("overlay--active");
+        document.querySelector('.body').classList.toggle("body--unscroll");
       }
     });
   });
   document.querySelector('.mp-close').addEventListener('click', function () {
     overlay.classList.toggle("overlay--active");
+    document.querySelector('.body').classList.toggle("body--unscroll");
   });
 }
 
@@ -298,8 +300,8 @@ if (document.querySelector(".conference-slider--olimp")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".conference-slider__prev--olimp",
-    nextButton: ".conference-slider__next--olimp",
+    prevButton: ".conference .slider__prev--olimp",
+    nextButton: ".conference .slider__next--olimp",
     controlsContainer: ".conference-slider-controls--olimp"
   });
 }
@@ -313,8 +315,8 @@ if (document.querySelector(".conference-slider--iliada")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".conference-slider__prev--iliada",
-    nextButton: ".conference-slider__next--iliada",
+    prevButton: ".conference .slider__prev--iliada",
+    nextButton: ".conference .slider__next--iliada",
     controlsContainer: ".conference-slider-controls--iliada"
   });
 }
@@ -328,18 +330,18 @@ if (document.querySelector(".conference-slider--germes")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".conference-slider__prev--germes",
-    nextButton: ".conference-slider__next--germes",
+    prevButton: ".conference .slider__prev--germes",
+    nextButton: ".conference .slider__next--germes",
     controlsContainer: ".conference-slider-controls--germes"
   });
 }
 
-var conference_slider_icon = document.querySelectorAll(".conference-slider__icon");
+var conference_slider_icon = document.querySelectorAll(".conference .slider__icon");
 conference_slider_icon.forEach(function (icon) {
   icon.addEventListener("click", function (event) {
     event.preventDefault();
     var parent = document.getElementById(icon.dataset.parent);
-    var prev_icon = parent.querySelector(".conference-slider__icon--active");
+    var prev_icon = parent.querySelector(".conference .slider__icon--active");
     var conference_slider_item = parent.querySelector(".conference-slider");
     var conference_slider_row = parent.querySelector(".conference-slider-row");
     parent.querySelector(".conference-slider-controls").classList.toggle("conference-slider-controls--module");
@@ -352,8 +354,8 @@ conference_slider_icon.forEach(function (icon) {
       conference_slider_row.classList.add("conference-slider");
     }
 
-    icon.classList.toggle("conference-slider__icon--active");
-    prev_icon.classList.toggle("conference-slider__icon--active");
+    icon.classList.toggle("slider__icon--active");
+    prev_icon.classList.toggle("slider__icon--active");
   });
 });
 var conference_list_items = document.querySelectorAll(".conference-list__item");
@@ -484,17 +486,17 @@ if (document.querySelector(".fitness-gallery-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".fitness-gallery-slider__prev",
-    nextButton: ".fitness-gallery-slider__next",
+    prevButton: ".fitness .slider__prev",
+    nextButton: ".fitness .slider__next",
     controlsContainer: ".fitness-gallery-slider-controls"
   });
 }
 
-var fitness_gallery_slider_icon = document.querySelectorAll(".fitness-gallery-slider__icon");
+var fitness_gallery_slider_icon = document.querySelectorAll(".fitness .slider__icon");
 fitness_gallery_slider_icon.forEach(function (icon) {
   icon.addEventListener("click", function (event) {
     event.preventDefault();
-    var prev_icon = document.querySelector(".fitness-gallery-slider__icon--active");
+    var prev_icon = document.querySelector(".fitness .slider__icon--active");
     var fitness_gallery_slider_item = document.querySelector(".fitness-gallery-slider");
     var fitness_gallery_slider_row = document.querySelector(".fitness-gallery-slider-row");
     document.querySelector(".fitness-gallery-slider-controls").classList.toggle("fitness-gallery-slider-controls--module");
@@ -507,8 +509,8 @@ fitness_gallery_slider_icon.forEach(function (icon) {
       fitness_gallery_slider_row.classList.add("fitness-gallery-slider");
     }
 
-    icon.classList.toggle("fitness-gallery-slider__icon--active");
-    prev_icon.classList.toggle("fitness-gallery-slider__icon--active");
+    icon.classList.toggle("slider__icon--active");
+    prev_icon.classList.toggle("slider__icon--active");
   });
 });
 
@@ -602,36 +604,37 @@ if (document.querySelector('.gallery__item')) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var header_submenu_icon = document.querySelector(".header-nav-list__item--menu"); //let header_submenu = document.querySelectorAll(".header-subnav-container");
-
-header_submenu_icon.addEventListener("click", function () {
-  header_submenu_icon.classList.toggle("header-nav-list__item--active-menu"); //prev_icon.classList.toggle("header-subnav-container-active");
+var header_submenu_icon = document.querySelector(".header-nav-list__item--menu");
+var header = document.querySelector(".header");
+header_submenu_icon.addEventListener("click", function (el) {
+  /*if (window.pageYOffset > 0) {
+    console.log('more');
+    header.classList.add("header--small");
+  }*/
+  header_submenu_icon.classList.toggle("header-nav-list__item--active-menu");
+  header.classList.toggle("header--open");
+  document.querySelector('.body').classList.toggle("body--unscroll");
 });
-/*window.addEventListener('scroll',() => {
-  if (this.oldScroll > this.scrollY) {
-    console.log('scroll');
-    document.querySelector(".header").classList.toggle("header--hidden");
-  }
-  this.oldScroll = this.scrollY;
-});*/
-
 var lastPos = 0;
 window.addEventListener('scroll', function () {
   if (window.pageYOffset < lastPos) {
-    document.querySelector(".main").classList.add("main--top");
-    document.querySelector(".header").classList.remove("header--hidden");
-    document.querySelector(".header").classList.add("header--small");
+    //document.querySelector(".main").classList.add("main--top");
+    header.classList.remove("header--hidden"); //header.classList.add("header--small");
+
     document.querySelector(".header-form").classList.add("header-form--hidden");
   } else {
-    document.querySelector(".main").classList.add("main--top");
+    //document.querySelector(".main").classList.add("main--top");
     document.querySelector(".header-form").classList.remove("header-form--hidden");
-    document.querySelector(".header").classList.add("header--hidden");
+    header.classList.add("header--hidden");
   }
-
-  if (window.pageYOffset == 0) {
-    document.querySelector(".header").classList.remove("header--small");
+  /*if (window.pageYOffset == 0) {
+    header.classList.remove("header--small");
     document.querySelector(".main").classList.remove("main--top");
   }
+  if (window.pageYOffset == 0 && document.querySelector(".header--small") && document.querySelector(".header--active")) {
+    header.classList.remove("header--small");
+  }*/
+
 
   lastPos = window.pageYOffset;
 });
@@ -689,17 +692,17 @@ if (document.querySelector(".index-gallery-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".index-gallery-slider__prev",
-    nextButton: ".index-gallery-slider__next",
+    prevButton: ".index-gallery .slider__prev",
+    nextButton: ".index-gallery .slider__next",
     controlsContainer: ".index-gallery-slider-controls"
   });
 }
 
-var index_gallery_slider_icon = document.querySelectorAll(".index-gallery-slider__icon");
+var index_gallery_slider_icon = document.querySelectorAll(".index-gallery .slider__icon");
 index_gallery_slider_icon.forEach(function (icon) {
   icon.addEventListener("click", function (event) {
     event.preventDefault();
-    var prev_icon = document.querySelector(".index-gallery-slider__icon--active");
+    var prev_icon = document.querySelector(".index-gallery .slider__icon--active");
     var index_gallery_slider_item = document.querySelector(".index-gallery-slider");
     var index_gallery_slider_row = document.querySelector(".index-gallery-slider-row");
     document.querySelector(".index-gallery-slider-controls").classList.toggle("index-gallery-slider-controls--module");
@@ -707,14 +710,13 @@ index_gallery_slider_icon.forEach(function (icon) {
     if (index_gallery_slider_item) {
       index_gallery_slider_item.classList.remove("index-gallery-slider");
       index_gallery_slider_item.classList.add("index-gallery-slider-row"); //console.log(index-gallery_slider_item.classList); 
-      //index-gallery_slider.destroy();
     } else if (index_gallery_slider_row) {
       index_gallery_slider_row.classList.remove("index-gallery-slider-row");
-      index_gallery_slider_row.classList.add("index-gallery-slider"); //index-gallery_slider.rebuild();
+      index_gallery_slider_row.classList.add("index-gallery-slider");
     }
 
-    icon.classList.toggle("index-gallery-slider__icon--active");
-    prev_icon.classList.toggle("index-gallery-slider__icon--active");
+    icon.classList.toggle("slider__icon--active");
+    prev_icon.classList.toggle("slider__icon--active");
   });
 });
 
@@ -745,8 +747,8 @@ if (document.querySelector(".offers-slider")) {
     autoplay: true,
     touch: true,
     mouseDrag: true,
-    prevButton: ".offers-slider__prev",
-    nextButton: ".offers-slider__next",
+    prevButton: ".offers .slider__prev",
+    nextButton: ".offers .slider__next",
     controlsContainer: ".offers-slider-controls",
     responsive: {
       1279: {
@@ -778,7 +780,7 @@ if (document.querySelector(".offers-slider")) {
   });
 }
 
-var offers_next = document.querySelector('.offers-slider__next');
+var offers_next = document.querySelector('.offers .slider__next');
 var slider = document.querySelector('.offers-slider-container');
 
 if (offers_next) {
@@ -825,8 +827,8 @@ if (document.querySelector(".other-rooms-preview-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".other-rooms-preview-slider__prev--standard1",
-    nextButton: ".other-rooms-preview-slider__next--standard1",
+    prevButton: ".other-rooms-preview-slider .slider__prev--standard1",
+    nextButton: ".other-rooms-preview-slider .slider__next--standard1",
     controlsContainer: ".other-rooms-preview-slider-controls--standard1"
   });
   var slider_standard2 = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
@@ -837,8 +839,8 @@ if (document.querySelector(".other-rooms-preview-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".other-rooms-preview-slider__prev--standard2",
-    nextButton: ".other-rooms-preview-slider__next--standard2",
+    prevButton: ".other-rooms-preview-slider .slider__prev--standard2",
+    nextButton: ".other-rooms-preview-slider .slider__next--standard2",
     controlsContainer: ".other-rooms-preview-slider-controls--standard2"
   });
   var slider_business_standard = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
@@ -849,8 +851,8 @@ if (document.querySelector(".other-rooms-preview-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".other-rooms-preview-slider__prev--business_standard",
-    nextButton: ".other-rooms-preview-slider__next--business_standard",
+    prevButton: ".other-rooms-preview-slider .slider__prev--business_standard",
+    nextButton: ".other-rooms-preview-slider .slider__next--business_standard",
     controlsContainer: ".other-rooms-preview-slider-controls--business_standard"
   });
   var slider_junior_suite = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
@@ -861,8 +863,8 @@ if (document.querySelector(".other-rooms-preview-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".other-rooms-preview-slider__prev--junior_suite",
-    nextButton: ".other-rooms-preview-slider__next--junior_suite",
+    prevButton: ".other-rooms-preview-slider .slider__prev--junior_suite",
+    nextButton: ".other-rooms-preview-slider .slider__next--junior_suite",
     controlsContainer: ".other-rooms-preview-slider-controls--junior_suite"
   });
   var slider_family_suite = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
@@ -873,8 +875,8 @@ if (document.querySelector(".other-rooms-preview-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".other-rooms-preview-slider__prev--family_suite",
-    nextButton: ".other-rooms-preview-slider__next--family_suite",
+    prevButton: ".other-rooms-preview-slider .slider__prev--family_suite",
+    nextButton: ".other-rooms-preview-slider .slider__next--family_suite",
     controlsContainer: ".other-rooms-preview-slider-controls--family_suite"
   });
   var slider_vip_suite = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
@@ -885,8 +887,8 @@ if (document.querySelector(".other-rooms-preview-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".other-rooms-preview-slider__prev--vip_suite",
-    nextButton: ".other-rooms-preview-slider__next--vip_suite",
+    prevButton: ".other-rooms-preview-slider .slider__prev--vip_suite",
+    nextButton: ".other-rooms-preview-slider .slider__next--vip_suite",
     controlsContainer: ".other-rooms-preview-slider-controls--vip_suite"
   });
   var slider_suite = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
@@ -897,8 +899,8 @@ if (document.querySelector(".other-rooms-preview-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".other-rooms-preview-slider__prev--suite",
-    nextButton: ".other-rooms-preview-slider__next--suite",
+    prevButton: ".other-rooms-preview-slider .slider__prev--suite",
+    nextButton: ".other-rooms-preview-slider .slider__next--suite",
     controlsContainer: ".other-rooms-preview-slider-controls--suite"
   });
 }
@@ -962,8 +964,8 @@ if (document.querySelector(".restaurants-slider--paradise")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".restaurants-slider__prev--paradise",
-    nextButton: ".restaurants-slider__next--paradise",
+    prevButton: ".restaurants .slider__prev--paradise",
+    nextButton: ".restaurants .slider__next--paradise",
     controlsContainer: ".restaurants-slider-controls--paradise"
   });
 }
@@ -977,8 +979,8 @@ if (document.querySelector(".restaurants-slider--prado")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".restaurants-slider__prev--prado",
-    nextButton: ".restaurants-slider__next--prado",
+    prevButton: ".restaurants .slider__prev--prado",
+    nextButton: ".restaurants .slider__next--prado",
     controlsContainer: ".restaurants-slider-controls--prado"
   });
 }
@@ -992,8 +994,8 @@ if (document.querySelector(".restaurants-slider--ingreco")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".restaurants-slider__prev--ingreco",
-    nextButton: ".restaurants-slider__next--ingreco",
+    prevButton: ".restaurants .slider__prev--ingreco",
+    nextButton: ".restaurants .slider__next--ingreco",
     controlsContainer: ".restaurants-slider-controls--ingreco"
   });
 }
@@ -1007,18 +1009,18 @@ if (document.querySelector(".restaurants-slider--weddings")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".restaurants-slider__prev--weddings",
-    nextButton: ".restaurants-slider__next--weddings",
+    prevButton: ".restaurants .slider__prev--weddings",
+    nextButton: ".restaurants .slider__next--weddings",
     controlsContainer: ".restaurants-slider-controls--weddings"
   });
 }
 
-var restaurants_slider_icon = document.querySelectorAll(".restaurants-slider__icon");
+var restaurants_slider_icon = document.querySelectorAll(".restaurants .slider__icon");
 restaurants_slider_icon.forEach(function (icon) {
   icon.addEventListener("click", function (event) {
     event.preventDefault();
     var parent = document.getElementById(icon.dataset.parent);
-    var prev_icon = parent.querySelector(".restaurants-slider__icon--active");
+    var prev_icon = parent.querySelector(".restaurants .slider__icon--active");
     var restaurants_slider_item = parent.querySelector(".restaurants-slider");
     var restaurants_slider_row = parent.querySelector(".restaurants-slider-row");
     parent.querySelector(".restaurants-slider-controls").classList.toggle("restaurants-slider-controls--module");
@@ -1031,8 +1033,8 @@ restaurants_slider_icon.forEach(function (icon) {
       restaurants_slider_row.classList.add("restaurants-slider");
     }
 
-    icon.classList.toggle("restaurants-slider__icon--active");
-    prev_icon.classList.toggle("restaurants-slider__icon--active");
+    icon.classList.toggle("slider__icon--active");
+    prev_icon.classList.toggle("slider__icon--active");
   });
 });
 var restaurants_list_items = document.querySelectorAll(".restaurants-list__item");
@@ -1084,8 +1086,8 @@ if (document.querySelector(".room-slider")) {
     autoplay: true,
     touch: true,
     mouseDrag: true,
-    prevButton: ".room-slider__prev",
-    nextButton: ".room-slider__next",
+    prevButton: ".room .slider__prev",
+    nextButton: ".room .slider__next",
     controlsContainer: ".room-slider-controls"
   });
 }
@@ -1183,8 +1185,8 @@ if (document.querySelector(".rooms-preview-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".rooms-preview-slider__prev--standard1",
-    nextButton: ".rooms-preview-slider__next--standard1",
+    prevButton: ".rooms-preview-slider .slider__prev--standard1",
+    nextButton: ".rooms-preview-slider .slider__next--standard1",
     controlsContainer: ".rooms-preview-slider-controls--standard1"
   });
   var slider_standard2 = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
@@ -1195,8 +1197,8 @@ if (document.querySelector(".rooms-preview-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".rooms-preview-slider__prev--standard2",
-    nextButton: ".rooms-preview-slider__next--standard2",
+    prevButton: ".rooms-preview-slider .slider__prev--standard2",
+    nextButton: ".rooms-preview-slider .slider__next--standard2",
     controlsContainer: ".rooms-preview-slider-controls--standard2"
   });
   var slider_business_standard = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
@@ -1207,8 +1209,8 @@ if (document.querySelector(".rooms-preview-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".rooms-preview-slider__prev--business_standard",
-    nextButton: ".rooms-preview-slider__next--business_standard",
+    prevButton: ".rooms-preview-slider .slider__prev--business_standard",
+    nextButton: ".rooms-preview-slider .slider__next--business_standard",
     controlsContainer: ".rooms-preview-slider-controls--business_standard"
   });
   var slider_junior_suite = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
@@ -1219,8 +1221,8 @@ if (document.querySelector(".rooms-preview-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".rooms-preview-slider__prev--junior_suite",
-    nextButton: ".rooms-preview-slider__next--junior_suite",
+    prevButton: ".rooms-preview-slider .slider__prev--junior_suite",
+    nextButton: ".rooms-preview-slider .slider__next--junior_suite",
     controlsContainer: ".rooms-preview-slider-controls--junior_suite"
   });
   var slider_family_suite = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
@@ -1231,8 +1233,8 @@ if (document.querySelector(".rooms-preview-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".rooms-preview-slider__prev--family_suite",
-    nextButton: ".rooms-preview-slider__next--family_suite",
+    prevButton: ".rooms-preview-slider .slider__prev--family_suite",
+    nextButton: ".rooms-preview-slider .slider__next--family_suite",
     controlsContainer: ".rooms-preview-slider-controls--family_suite"
   });
   var slider_vip_suite = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
@@ -1243,8 +1245,8 @@ if (document.querySelector(".rooms-preview-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".rooms-preview-slider__prev--vip_suite",
-    nextButton: ".rooms-preview-slider__next--vip_suite",
+    prevButton: ".rooms-preview-slider .slider__prev--vip_suite",
+    nextButton: ".rooms-preview-slider .slider__next--vip_suite",
     controlsContainer: ".rooms-preview-slider-controls--vip_suite"
   });
   var slider_suite = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
@@ -1255,8 +1257,8 @@ if (document.querySelector(".rooms-preview-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".rooms-preview-slider__prev--suite",
-    nextButton: ".rooms-preview-slider__next--suite",
+    prevButton: ".rooms-preview-slider .slider__prev--suite",
+    nextButton: ".rooms-preview-slider .slider__next--suite",
     controlsContainer: ".rooms-preview-slider-controls--suite"
   });
 }
@@ -1336,17 +1338,17 @@ if (document.querySelector(".salon-gallery-slider")) {
     touch: true,
     mouseDrag: true,
     //destroy: destroy(),
-    prevButton: ".salon-gallery-slider__prev",
-    nextButton: ".salon-gallery-slider__next",
+    prevButton: ".salon .slider__prev",
+    nextButton: ".salon .slider__next",
     controlsContainer: ".salon-gallery-slider-controls"
   });
 }
 
-var salon_gallery_slider_icon = document.querySelectorAll(".salon-gallery-slider__icon");
+var salon_gallery_slider_icon = document.querySelectorAll(".salon .slider__icon");
 salon_gallery_slider_icon.forEach(function (icon) {
   icon.addEventListener("click", function (event) {
     event.preventDefault();
-    var prev_icon = document.querySelector(".salon-gallery-slider__icon--active");
+    var prev_icon = document.querySelector(".salon .slider__icon--active");
     var salon_gallery_slider_item = document.querySelector(".salon-gallery-slider");
     var salon_gallery_slider_row = document.querySelector(".salon-gallery-slider-row");
     document.querySelector(".salon-gallery-slider-controls").classList.toggle("salon-gallery-slider-controls--module");
@@ -1359,8 +1361,8 @@ salon_gallery_slider_icon.forEach(function (icon) {
       salon_gallery_slider_row.classList.add("salon-gallery-slider");
     }
 
-    icon.classList.toggle("salon-gallery-slider__icon--active");
-    prev_icon.classList.toggle("salon-gallery-slider__icon--active");
+    icon.classList.toggle("slider__icon--active");
+    prev_icon.classList.toggle("slider__icon--active");
   });
 });
 
@@ -1389,8 +1391,8 @@ if (document.querySelector(".services-preview-slider")) {
     touch: true,
     gutter: 50,
     mouseDrag: true,
-    prevButton: ".services-preview-slider__prev--restaurant",
-    nextButton: ".services-preview-slider__next--restaurant",
+    prevButton: ".services-preview-slider .slider__prev--restaurant",
+    nextButton: ".services-preview-slider .slider__next--restaurant",
     controlsContainer: ".services-preview-slider-controls--restaurant",
     responsive: {
       1210: {
@@ -1422,8 +1424,8 @@ if (document.querySelector(".services-preview-slider")) {
     touch: true,
     gutter: 50,
     mouseDrag: true,
-    prevButton: ".services-preview-slider__prev--conference",
-    nextButton: ".services-preview-slider__next--conference",
+    prevButton: ".services-preview-slider .slider__prev--conference",
+    nextButton: ".services-preview-slider .slider__next--conference",
     controlsContainer: ".services-preview-slider-controls--conference",
     responsive: {
       1210: {
@@ -1455,8 +1457,8 @@ if (document.querySelector(".services-preview-slider")) {
     touch: true,
     gutter: 50,
     mouseDrag: true,
-    prevButton: ".services-preview-slider__prev--fitness",
-    nextButton: ".services-preview-slider__next--fitness",
+    prevButton: ".services-preview-slider .slider__prev--fitness",
+    nextButton: ".services-preview-slider .slider__next--fitness",
     controlsContainer: ".services-preview-slider-controls--fitness",
     responsive: {
       1210: {
