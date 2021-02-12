@@ -3219,14 +3219,21 @@ body section:nth-child(2n) {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: normal;
-  justify-content: space-around;
+  justify-content: normal;
   margin-top: 53px;
   margin-bottom: 19px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow-x: scroll;
+}
+
+.other-rooms-list ::-webkit-scrollbar {
+  width: 0px;
+  background: rgba(255, 255, 255, 0);
 }
 
 .other-rooms-list__item {
   display: block;
+  min-width: max-content;
   padding: 0 20px 19px;
   text-decoration: none;
 }
@@ -3700,28 +3707,6 @@ body section:nth-child(2n) {
   flex: 0 0 50%;
   width: 50%;
   max-width: 50%;
-  /*&-container {
-      width: 100%;
-      height: 990px;
-      position: relative;
-    }
-    &-fixed {
-      width: 600px;
-      height: 360px;
-      position: absolute;
-      z-index: 2;
-      top: 0;
-      left: 0;
-    }
-    &-scroll {
-      width: 100%;
-      height: 100%;
-      width: 1px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      overflow-y: scroll;
-    }*/
 }
 
 .room-col:first-child {
@@ -3863,6 +3848,7 @@ body section:nth-child(2n) {
   justify-content: normal;
   margin-bottom: 42px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  overflow-x: scroll;
 }
 
 .room-info__title {
@@ -4967,12 +4953,6 @@ body section:nth-child(2n) {
   }
 }
 
-@media only screen and (max-width: 1220px) {
-  .other-rooms-list__item {
-    padding: 0 0 19px;
-  }
-}
-
 @media only screen and (max-width: 1210px) {
   .services-preview-list {
     max-width: 1280px;
@@ -5063,14 +5043,6 @@ body section:nth-child(2n) {
 
   .restaurants-features {
     margin: 0;
-  }
-
-  .room-info-titles {
-    justify-content: space-around;
-  }
-
-  .room-info__title {
-    padding: 0 0 22px;
   }
 }
 
