@@ -1119,20 +1119,18 @@ if (room_preview_titles) {
 
 var fixed_col = document.querySelector('.room-col:first-child');
 
-if (fixed_col) {
-  var room_row_width = document.querySelector('.room-row').offsetWidth; //console.log(room_row_width, (document.documentElement.clientWidth - room_row_width) / 2);
-
-  var left = (document.documentElement.clientWidth - room_row_width) / 2;
-  fixed_col.style.left = left; //console.log(fixed_col.style.left);
-
+if (fixed_col && document.documentElement.clientWidth > 768) {
   window.addEventListener('scroll', function () {
-    var fixed_col_top = fixed_col.getBoundingClientRect().top + pageYOffset; //fixed_col.classList.remove("room-col--sticky");
+    var room_row_width = document.querySelector('.room-row').offsetWidth;
+    fixed_col.style.left = (document.documentElement.clientWidth - room_row_width) / 2 + "px";
+    var fixed_col_top = fixed_col.getBoundingClientRect().top + pageYOffset;
+    var height = document.querySelector('.room-col:last-child').offsetHeight - fixed_col.offsetHeight;
 
-    if (fixed_col_top > 700) {
-      fixed_col.classList.add("room-col--sticky"); //console.log(pageYOffset);
+    if (fixed_col_top > height) {
+      fixed_col.classList.add("room-col--sticky");
     }
 
-    if (pageYOffset <= 700) {
+    if (pageYOffset <= height) {
       fixed_col.classList.remove("room-col--sticky");
     }
   });
@@ -1552,7 +1550,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createRipple", function() { return createRipple; });
 function createRipple(event) {
   var button = event.currentTarget;
-  console.log("click");
   var circle = document.createElement("span");
   var diameter = Math.max(button.clientWidth, button.clientHeight);
   var radius = diameter / 2;
