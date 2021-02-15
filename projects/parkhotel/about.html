@@ -23,13 +23,13 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body class="body">
-    <div class="header-form">
+    <div class="header-form header-form--hidden">
   <div class="container">
     <div class="header-form-row">
       <a class="header-form-logo" href="/">
-        <div class="header-form-logo__stars"></div>
+        <!--<div class="header-form-logo__stars"></div>
         <div class="header-form-logo__name"></div>
-        <div class="header-form-logo__city">STAVROPOL</div>
+        <div class="header-form-logo__city">STAVROPOL</div>-->
       </a>
       <div class="header-form__item"></div>
     </div>
@@ -39,14 +39,9 @@
     <header class="header">
   <div class="container">
     <div class="header-row">
-      <a class="header-logo" href="/">
-        <div class="header-logo__stars"></div>
-        <div class="header-logo__name"></div>
-        <div class="header-logo__city">STAVROPOL</div>
-      </a>
-      <nav class="header-nav">
+      <div class="header-nav header-nav--mobile">
         <div class="header-nav-icon"></div>
-        <div class="header-nav-list header-nav-list--mobile">
+        <div class="header-nav-list">
           <div class="header-nav__item">
             <div class="header-nav__title">Номера и цены <i class="header-nav-more"></i></div>
             <ul class="header-nav-sublist">
@@ -99,100 +94,113 @@
             </div>
           </div>
         </div>
-        <ul class="header-nav-list">
-          <li class="header-nav-list__item header-nav-list__item--menu header-nav-list__item--close">
-            <a class="header-nav__link"></a>
-            <div class="header-subnav-container">
-              <div class="header-subnav-row">
-                <nav class="header-subnav">
-                  <div class="header-subnav-social">
-                    <div class="header-subnav-social-links">
-                      <a class="header-subnav-social__link header-subnav-social__link--facebook animated__icon" href="https://www.facebook.com/park.hotel.stav" target="_blank"></a>
-                      <a class="header-subnav-social__link header-subnav-social__link--whatsapp animated__icon" href="https://www.instagram.com/parkhotel_stavropol/" target="_blank"></a>
-                      <a class="header-subnav-social__link header-subnav-social__link--inst animated__icon" href="https://www.instagram.com/parkhotel_stavropol/" target="_blank" ></a>
+      </div>
+      <a class="header-logo" href="/">
+        <div class="header-logo__stars"></div>
+        <div class="header-logo__name"></div>
+        <div class="header-logo__city">STAVROPOL</div>
+      </a>
+      <div class="header-info">
+        <nav class="header-nav">
+          <div class="header-nav-icon"></div>
+          <ul class="header-nav-list">
+            <li class="header-nav-list__item header-nav-list__item--menu header-nav-list__item--close">
+              <a class="header-nav__link"></a>
+              <div class="header-subnav-container">
+                <div class="header-subnav-row">
+                  <nav class="header-subnav">
+                    <div class="header-subnav-social">
+                      <div class="header-subnav-social-links">
+                        <a class="header-subnav-social__link header-subnav-social__link--facebook animated__icon" href="https://www.facebook.com/park.hotel.stav" target="_blank"></a>
+                        <a class="header-subnav-social__link header-subnav-social__link--whatsapp animated__icon" href="https://www.instagram.com/parkhotel_stavropol/" target="_blank"></a>
+                        <a class="header-subnav-social__link header-subnav-social__link--inst animated__icon" href="https://www.instagram.com/parkhotel_stavropol/" target="_blank" ></a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="header-subnav-list">
-                    <a class="header-subnav-list__item" href="restaurants.html">
-                      Рестораны
-                    </a>
-                    <a class="header-subnav-list__item" href="conference.html">
-                      Конференц-услуги
-                    </a>
-                    <a class="header-subnav-list__item" href="fitness.html">
-                      Фитнес
-                    </a>
-                    <a class="header-subnav-list__item" href="salon.html">
-                      Салон красоты
-                    </a>
-                    <a class="header-subnav-list__item" href="gallery.html">
-                      Галерея
-                    </a>
-                    <a class="header-subnav-list__item" href="contacts.html">
-                      Контакты
-                    </a>
-                  </div>
-                  <div class="header-subnav-rooms">
-                    <div class="header-subnav-rooms__title">Номера</div>
-                    <a class="header-subnav-rooms__item" href="room.html">
-                      Стандарт одноместный
-                    </a>
-                    <a class="header-subnav-rooms__item" href="room.html">
-                      Стандарт двухместный
-                    </a>
-                    <a class="header-subnav-rooms__item" href="room.html">
-                      Бизнес-стандарт
-                    </a>
-                    <a class="header-subnav-rooms__item" href="room.html">
-                      Джуниор сюит
-                    </a>
-                    <a class="header-subnav-rooms__item" href="room.html">
-                      Люкс семейный
-                    </a>
-                    <a class="header-subnav-rooms__item" href="room.html">
-                      VIP-люкс
-                    </a>
-                    <a class="header-subnav-rooms__item" href="room.html">
-                      Сюит
-                    </a>
-                  </div>
-                  <div class="header-subnav-login">
-                    <a class="header-subnav-login__title">Войти</a>
-                    <a class="header-subnav-login__link" href="#">или зарегистрироваться</a>
-                  </div>
-                </nav>
+                    <div class="header-subnav-list">
+                      <a class="header-subnav-list__item" href="restaurants.html">
+                        Рестораны
+                      </a>
+                      <a class="header-subnav-list__item" href="conference.html">
+                        Конференц-услуги
+                      </a>
+                      <a class="header-subnav-list__item" href="fitness.html">
+                        Фитнес
+                      </a>
+                      <a class="header-subnav-list__item" href="salon.html">
+                        Салон красоты
+                      </a>
+                      <a class="header-subnav-list__item" href="gallery.html">
+                        Галерея
+                      </a>
+                      <a class="header-subnav-list__item" href="contacts.html">
+                        Контакты
+                      </a>
+                    </div>
+                    <div class="header-subnav-rooms">
+                      <div class="header-subnav-rooms__title">Номера</div>
+                      <a class="header-subnav-rooms__item" href="room.html">
+                        Стандарт одноместный
+                      </a>
+                      <a class="header-subnav-rooms__item" href="room.html">
+                        Стандарт двухместный
+                      </a>
+                      <a class="header-subnav-rooms__item" href="room.html">
+                        Бизнес-стандарт
+                      </a>
+                      <a class="header-subnav-rooms__item" href="room.html">
+                        Джуниор сюит
+                      </a>
+                      <a class="header-subnav-rooms__item" href="room.html">
+                        Люкс семейный
+                      </a>
+                      <a class="header-subnav-rooms__item" href="room.html">
+                        VIP-люкс
+                      </a>
+                      <a class="header-subnav-rooms__item" href="room.html">
+                        Сюит
+                      </a>
+                    </div>
+                    <div class="header-subnav-login">
+                      <a class="header-subnav-login__title">Войти</a>
+                      <a class="header-subnav-login__link" href="#">или зарегистрироваться</a>
+                    </div>
+                  </nav>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="header-nav-list__item">
-            <a class="header-nav__link" href="#">Номера</a>
-          </li>
-          <li class="header-nav-list__item">
-            <a class="header-nav__link" href="restaurants.html">Рестораны</a>
-          </li>
-          <li class="header-nav-list__item">
-            <a class="header-nav__link" href="conference.html">Конференц-залы</a>
-          </li>
-          <li class="header-nav-list__item">
-            <a class="header-nav__link" href="services.html">Услуги</a>
-          </li>
-          <li class="header-nav-list__item">
-            <a class="header-nav__link" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header-contacts">
-        <div class="header-contacts-links">
-          <a class="header-contacts__value" href="tel:+7(8652)55-21-22">+7 (8652) 55-21-22</a>
-          <a class="header-contacts__link" href="#">перезвоните мне</a>
-        </div>
-        <div class="header-contacts__button">
-          <a class="btn " href="#" role="button"><span class="btn-text">Забронировать</span></a>
-        </div>
-        <div class="header-contacts-links--mobile">
-          <a class="header-contacts__link--mobile" href="#"></a>
-          <a class="header-contacts__link--mobile" href="tel:+7(8652)55-21-22"></a>
-        </div>
+            </li>
+            <li class="header-nav-list__item">
+              <a class="header-nav__link" href="#">Номера</a>
+            </li>
+            <li class="header-nav-list__item">
+              <a class="header-nav__link" href="restaurants.html">Рестораны</a>
+            </li>
+            <li class="header-nav-list__item">
+              <a class="header-nav__link" href="conference.html">Конференц-залы</a>
+            </li>
+            <li class="header-nav-list__item">
+              <a class="header-nav__link" href="services.html">Услуги</a>
+            </li>
+            <li class="header-nav-list__item">
+              <a class="header-nav__link" href="contacts.html">Контакты</a>
+            </li>
+            <li class="header-nav-list__item header-nav-list__item--lang">
+              <a class="header-nav__link header-nav__link--lang" href="#">EN</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-contacts">
+          <div class="header-contacts-links">
+            <a class="header-contacts__value" href="tel:+7(8652)55-21-22">+7 (8652) 55-21-22</a>
+            <a class="header-contacts__link" href="#">перезвоните мне</a>
+          </div>
+          <div class="header-contacts__button">
+            <a class="btn " href="#" role="button"><span class="btn-text">Забронировать</span></a>
+          </div>
+          <div class="header-contacts-links--mobile">
+            <a class="header-contacts__link--mobile" href="#"></a>
+            <a class="header-contacts__link--mobile" href="tel:+7(8652)55-21-22"></a>
+          </div>
+        </div>  
       </div>
     </div>
   </div>
@@ -281,35 +289,38 @@
         <div class="container">
           <div class="section-title">Доступные номера</div>
           <div class="other-rooms-row">
-  <div class="other-rooms-list">
-    <a class="other-rooms-list__item" href="#standard1">
-      <div class="other-rooms__title">Стандарт Одноместный</div>
-      <div class="other-rooms__price">от 2 950 руб.</div>
-    </a>
-    <a class="other-rooms-list__item other-rooms-list__item--active" href="#standard2">
-      <div class="other-rooms__title">Стандарт Двухместный</div>
-      <div class="other-rooms__price">от 2 950 руб.</div>
-    </a>
-    <a class="other-rooms-list__item" href="#business_standard">
-      <div class="other-rooms__title">Бизнес-стандарт</div>
-      <div class="other-rooms__price other-rooms__price--star">от 3 250 руб.</div>
-    </a>
-    <a class="other-rooms-list__item" href="#junior_suite">
-      <div class="other-rooms__title">Джуниор Сюит</div>
-      <div class="other-rooms__price">от 4 950 руб.</div>
-    </a>
-    <a class="other-rooms-list__item" href="#family_suite">
-      <div class="other-rooms__title">Люкс Семейный</div>
-      <div class="other-rooms__price">от 5 750 руб.</div>
-    </a>
-    <a class="other-rooms-list__item" href="#vip_suite">
-      <div class="other-rooms__title">VIP-Люкс</div>
-      <div class="other-rooms__price">от 9 950 руб.</div>
-    </a>
-    <a class="other-rooms-list__item" href="#suite">
-      <div class="other-rooms__title">Сюит</div>
-      <div class="other-rooms__price">от 12 450 руб.</div>
-    </a>
+  <div class="other-rooms-list-outer nice-scrollbar">
+    <div class="other-rooms-list">
+      <a class="other-rooms-list__item" href="#standard1">
+        <div class="other-rooms__title">Стандарт Одноместный</div>
+        <div class="other-rooms__price">от 2 950 руб.</div>
+      </a>
+      <a class="other-rooms-list__item other-rooms-list__item--active" href="#standard2">
+        <div class="other-rooms__title">Стандарт Двухместный</div>
+        <div class="other-rooms__price">от 2 950 руб.</div>
+      </a>
+      <a class="other-rooms-list__item" href="#business_standard">
+        <div class="other-rooms__title">Бизнес-стандарт</div>
+        <div class="other-rooms__price other-rooms__price--star">от 3 250 руб.</div>
+      </a>
+      <a class="other-rooms-list__item" href="#junior_suite">
+        <div class="other-rooms__title">Джуниор Сюит</div>
+        <div class="other-rooms__price">от 4 950 руб.</div>
+      </a>
+      <a class="other-rooms-list__item" href="#family_suite">
+        <div class="other-rooms__title">Люкс Семейный</div>
+        <div class="other-rooms__price">от 5 750 руб.</div>
+      </a>
+      <a class="other-rooms-list__item" href="#vip_suite">
+        <div class="other-rooms__title">VIP-Люкс</div>
+        <div class="other-rooms__price">от 9 950 руб.</div>
+      </a>
+      <a class="other-rooms-list__item" href="#suite">
+        <div class="other-rooms__title">Сюит</div>
+        <div class="other-rooms__price">от 12 450 руб.</div>
+      </a>
+    </div>
+    <div class="underline"></div>
   </div>
   <div class="other-rooms-preview-list">
     <div class="other-rooms-preview-list__item" id="standard1">
