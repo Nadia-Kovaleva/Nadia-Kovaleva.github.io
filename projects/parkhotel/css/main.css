@@ -620,6 +620,10 @@ html {
   overflow-x: hidden;
 }
 
+.html--unscroll {
+  overflow-y: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -629,6 +633,10 @@ html {
 
 img {
   max-width: 100%;
+}
+
+:root {
+  --animate-duration: 0.3s;
 }
 
 .body {
@@ -647,12 +655,6 @@ img {
   font-weight: 400;
   color: #fff;
   background-color: #222224;
-}
-
-.body--unscroll {
-  min-height: auto;
-  max-height: 100vh;
-  overflow: hidden;
 }
 
 .body .main {
@@ -2243,7 +2245,6 @@ body section:nth-child(2n) {
 .footer-social-links .footer-social__link {
   width: 20px;
   height: 20px;
-  margin-right: 20px;
   background: url(../images/svg/wa.svg) no-repeat center;
 }
 
@@ -2676,6 +2677,7 @@ body section:nth-child(2n) {
   height: 15px;
   margin-top: -3px;
   background: url(../images/svg/menu.svg) no-repeat center;
+  cursor: pointer;
 }
 
 .header-nav-list__item--active-menu .header-nav__link {
@@ -3253,6 +3255,7 @@ body section:nth-child(2n) {
   width: 100%;
   max-width: 100%;
   padding: 125px 0;
+  background: #222224 !important;
 }
 
 .other-rooms-row {
@@ -3279,15 +3282,41 @@ body section:nth-child(2n) {
 }
 
 .other-rooms-list__item {
+  position: relative;
   display: block;
   min-width: max-content;
   padding: 0 20px 19px;
+  overflow: hidden;
   text-decoration: none;
 }
 
-.other-rooms-list__item--active .other-rooms__title,
-.other-rooms-list__item:hover .other-rooms__title {
+.other-rooms-list__item--active .other-rooms__title {
   color: #a18f57;
+}
+
+.other-rooms-list__item:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.other-rooms-list__item-inner {
+  position: relative;
+  z-index: 5;
+  display: block;
+}
+
+.other-rooms-list__item span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #373739;
+  transform: scale(0);
+  animation: ripple 500ms ease-in-out;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
 }
 
 .other-rooms__title {

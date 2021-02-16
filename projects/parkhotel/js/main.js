@@ -661,7 +661,7 @@ header_submenu_icon.addEventListener("click", function (el) {
 
   document.querySelector('.header-subnav-container').style.left = -document.querySelector('.header-subnav-container').getBoundingClientRect().left + "px"; //console.log(document.querySelector('.header-subnav-container').getBoundingClientRect().left);
 
-  document.querySelector('.body').classList.toggle("body--unscroll");
+  document.querySelector('html').classList.toggle("html--unscroll");
 });
 var lastPos = 0;
 window.addEventListener('scroll', function () {
@@ -969,6 +969,7 @@ if (document.querySelector(".other-rooms")) {
         'width': link.clientWidth + 'px',
         'left': link.offsetLeft + 'px'
       });
+      event.preventDefault(); //setTimeout(function(){
 
       if (document.documentElement.clientWidth > 768) {
         event.preventDefault();
@@ -980,8 +981,9 @@ if (document.querySelector(".other-rooms")) {
       room.classList.toggle("other-rooms-preview-list__item--active");
       prev_room.classList.toggle("other-rooms-preview-list__item--active");
       prev_link.classList.toggle("other-rooms-list__item--active");
-      link.classList.toggle("other-rooms-list__item--active");
+      link.classList.toggle("other-rooms-list__item--active"); //}, 500);
     });
+    link.addEventListener("click", _js_import_functions__WEBPACK_IMPORTED_MODULE_1__["createRipple"]);
   });
   var other_rooms_detail = document.querySelectorAll('.other-rooms-preview-info-detail');
   other_rooms_detail.forEach(function (el) {
@@ -1324,20 +1326,19 @@ if (document.querySelector(".rooms")) {
         'height': link.clientHeight + 'px',
         'top': link.offsetTop + 'px'
       });
-      event.preventDefault();
-      setTimeout(function () {
-        if (document.documentElement.clientWidth > 768) {
-          event.preventDefault();
-        }
+      event.preventDefault(); //setTimeout(function(){
 
-        var prev_room = document.querySelector(".rooms-preview-list__item--active");
-        var prev_link = document.querySelector(".rooms-list__item--active");
-        var room = document.querySelector(link.getAttribute("href"));
-        room.classList.toggle("rooms-preview-list__item--active");
-        prev_room.classList.toggle("rooms-preview-list__item--active");
-        prev_link.classList.toggle("rooms-list__item--active");
-        link.classList.toggle("rooms-list__item--active");
-      }, 500);
+      if (document.documentElement.clientWidth > 768) {
+        event.preventDefault();
+      }
+
+      var prev_room = document.querySelector(".rooms-preview-list__item--active");
+      var prev_link = document.querySelector(".rooms-list__item--active");
+      var room = document.querySelector(link.getAttribute("href"));
+      room.classList.toggle("rooms-preview-list__item--active");
+      prev_room.classList.toggle("rooms-preview-list__item--active");
+      prev_link.classList.toggle("rooms-list__item--active");
+      link.classList.toggle("rooms-list__item--active"); //}, 500);
     });
     link.addEventListener("click", _js_import_functions__WEBPACK_IMPORTED_MODULE_1__["createRipple"]);
   });
@@ -2083,7 +2084,7 @@ try {
   _iterator.f();
 }
 
-new _import_wow_min__WEBPACK_IMPORTED_MODULE_1__["WOW"]().init();
+new _import_wow_min__WEBPACK_IMPORTED_MODULE_1__["WOW"]().init(); //WOW.sync();
 
 /***/ })
 
