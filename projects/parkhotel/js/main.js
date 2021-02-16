@@ -148,17 +148,17 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./src/js/index.js","vendor"]);
+/******/ 	deferredModules.push(["./themes/parkhotel/src/js/index.js","vendor"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/blocks/modules/404/404.js":
-/*!***************************************!*\
-  !*** ./src/blocks/modules/404/404.js ***!
-  \***************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/404/404.js":
+/*!********************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/404/404.js ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -166,22 +166,22 @@
 
 /***/ }),
 
-/***/ "./src/blocks/modules/about-gallery/about-gallery.js":
-/*!***********************************************************!*\
-  !*** ./src/blocks/modules/about-gallery/about-gallery.js ***!
-  \***********************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/about-gallery/about-gallery.js":
+/*!****************************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/about-gallery/about-gallery.js ***!
+  \****************************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
- //import { tns } from "tiny-slider";
+/* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
 
 
+ //import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 
 if (document.querySelector(".about-gallery-slider")) {
-  var gallery_slider = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var gallery_slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".about-gallery-slider",
     items: 1,
     slideBy: "page",
@@ -217,10 +217,10 @@ if (document.querySelector('.about-gallery__item')) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/about/about.js":
-/*!*******************************************!*\
-  !*** ./src/blocks/modules/about/about.js ***!
-  \*******************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/about/about.js":
+/*!************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/about/about.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -254,10 +254,10 @@ if (document.querySelector('.about-info-image')) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/book/book.js":
-/*!*****************************************!*\
-  !*** ./src/blocks/modules/book/book.js ***!
-  \*****************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/book/book.js":
+/*!**********************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/book/book.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -265,10 +265,10 @@ if (document.querySelector('.about-info-image')) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/conference-booking/conference-booking.js":
-/*!*********************************************************************!*\
-  !*** ./src/blocks/modules/conference-booking/conference-booking.js ***!
-  \*********************************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/conference-booking/conference-booking.js":
+/*!**************************************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/conference-booking/conference-booking.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -276,10 +276,10 @@ if (document.querySelector('.about-info-image')) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/conference-info/conference-info.js":
-/*!***************************************************************!*\
-  !*** ./src/blocks/modules/conference-info/conference-info.js ***!
-  \***************************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/conference-info/conference-info.js":
+/*!********************************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/conference-info/conference-info.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -287,24 +287,25 @@ if (document.querySelector('.about-info-image')) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/conference/conference.js":
-/*!*****************************************************!*\
-  !*** ./src/blocks/modules/conference/conference.js ***!
-  \*****************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/conference/conference.js":
+/*!**********************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/conference/conference.js ***!
+  \**********************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
-/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../js/import/functions */ "./src/js/import/functions.js");
- //import { tns } from "tiny-slider";
+/* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
+/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../js/import/functions */ "./themes/parkhotel/src/js/import/functions.js");
 
+
+ //import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 
 
 
 if (document.querySelector(".conference-slider--olimp")) {
-  var conference_slider_olimp = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var conference_slider_olimp = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".conference-slider--olimp",
     items: 1,
     slideBy: "page",
@@ -319,7 +320,7 @@ if (document.querySelector(".conference-slider--olimp")) {
 }
 
 if (document.querySelector(".conference-slider--iliada")) {
-  var conference_slider_iliada = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var conference_slider_iliada = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".conference-slider--iliada",
     items: 1,
     slideBy: "page",
@@ -334,7 +335,7 @@ if (document.querySelector(".conference-slider--iliada")) {
 }
 
 if (document.querySelector(".conference-slider--germes")) {
-  var conference_slider_germes = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var conference_slider_germes = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".conference-slider--germes",
     items: 1,
     slideBy: "page",
@@ -398,10 +399,10 @@ if (document.querySelector(".conference")) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/contacts/contacts.js":
-/*!*************************************************!*\
-  !*** ./src/blocks/modules/contacts/contacts.js ***!
-  \*************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/contacts/contacts.js":
+/*!******************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/contacts/contacts.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -442,10 +443,10 @@ if (contacts_info_titles) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/extra-services/extra-services.js":
-/*!*************************************************************!*\
-  !*** ./src/blocks/modules/extra-services/extra-services.js ***!
-  \*************************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/extra-services/extra-services.js":
+/*!******************************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/extra-services/extra-services.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -453,10 +454,10 @@ if (contacts_info_titles) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/features/features.js":
-/*!*************************************************!*\
-  !*** ./src/blocks/modules/features/features.js ***!
-  \*************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/features/features.js":
+/*!******************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/features/features.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -464,16 +465,16 @@ if (contacts_info_titles) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/fitness-price/fitness-price.js":
-/*!***********************************************************!*\
-  !*** ./src/blocks/modules/fitness-price/fitness-price.js ***!
-  \***********************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/fitness-price/fitness-price.js":
+/*!****************************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/fitness-price/fitness-price.js ***!
+  \****************************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../js/import/functions */ "./src/js/import/functions.js");
+/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../js/import/functions */ "./themes/parkhotel/src/js/import/functions.js");
 
 
 if (document.querySelector(".fitness-price")) {
@@ -504,22 +505,22 @@ if (document.querySelector(".fitness-price")) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/fitness/fitness.js":
-/*!***********************************************!*\
-  !*** ./src/blocks/modules/fitness/fitness.js ***!
-  \***********************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/fitness/fitness.js":
+/*!****************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/fitness/fitness.js ***!
+  \****************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
- //import { tns } from "tiny-slider";
+/* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
 
 
+ //import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 
 if (document.querySelector(".fitness-gallery-slider")) {
-  var fitness_gallery_slider = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var fitness_gallery_slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".fitness-gallery-slider",
     items: 1,
     slideBy: "page",
@@ -557,10 +558,10 @@ fitness_gallery_slider_icon.forEach(function (icon) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/footer/footer.js":
-/*!*********************************************!*\
-  !*** ./src/blocks/modules/footer/footer.js ***!
-  \*********************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/footer/footer.js":
+/*!**************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/footer/footer.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -578,22 +579,22 @@ if (footer_nav_more) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/gallery/gallery.js":
-/*!***********************************************!*\
-  !*** ./src/blocks/modules/gallery/gallery.js ***!
-  \***********************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/gallery/gallery.js":
+/*!****************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/gallery/gallery.js ***!
+  \****************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
- //import { tns } from "tiny-slider";
+/* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
 
 
+ //import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 
 if (document.querySelector(".gallery-slider")) {
-  var gallery_slider = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var gallery_slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".gallery-slider",
     items: 1,
     slideBy: "page",
@@ -627,10 +628,10 @@ if (document.querySelector('.gallery__item')) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/header-form/header-form.js":
-/*!*******************************************************!*\
-  !*** ./src/blocks/modules/header-form/header-form.js ***!
-  \*******************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/header-form/header-form.js":
+/*!************************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/header-form/header-form.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -638,10 +639,10 @@ if (document.querySelector('.gallery__item')) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/header/header.js":
-/*!*********************************************!*\
-  !*** ./src/blocks/modules/header/header.js ***!
-  \*********************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/header/header.js":
+/*!**************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/header/header.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -707,10 +708,10 @@ if (header_nav_more) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/hotel-services/hotel-services.js":
-/*!*************************************************************!*\
-  !*** ./src/blocks/modules/hotel-services/hotel-services.js ***!
-  \*************************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/hotel-services/hotel-services.js":
+/*!******************************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/hotel-services/hotel-services.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -718,22 +719,22 @@ if (header_nav_more) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/index-gallery/index-gallery.js":
-/*!***********************************************************!*\
-  !*** ./src/blocks/modules/index-gallery/index-gallery.js ***!
-  \***********************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/index-gallery/index-gallery.js":
+/*!****************************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/index-gallery/index-gallery.js ***!
+  \****************************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
- //import { tns } from "tiny-slider";
+/* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
+ //import { tns } from "../../../../../../node_modules/tiny-slider/src/tiny-slider";
 
 
 
 if (document.querySelector(".index-gallery-slider")) {
-  var index_gallery_slider = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var index_gallery_slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".index-gallery-slider",
     items: 1,
     slideBy: "page",
@@ -771,22 +772,22 @@ index_gallery_slider_icon.forEach(function (icon) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/offers/offers.js":
-/*!*********************************************!*\
-  !*** ./src/blocks/modules/offers/offers.js ***!
-  \*********************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/offers/offers.js":
+/*!**************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/offers/offers.js ***!
+  \**************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
- //import { tns } from "tiny-slider";
+/* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
 
 
+ //import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 
 if (document.querySelector(".offers-slider")) {
-  var offers_slider = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var offers_slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".offers-slider",
     items: 3.8,
     slideBy: 1,
@@ -842,10 +843,10 @@ if (offers_next) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/opinion/opinion.js":
-/*!***********************************************!*\
-  !*** ./src/blocks/modules/opinion/opinion.js ***!
-  \***********************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/opinion/opinion.js":
+/*!****************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/opinion/opinion.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -853,24 +854,25 @@ if (offers_next) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/other-rooms/other-rooms.js":
-/*!*******************************************************!*\
-  !*** ./src/blocks/modules/other-rooms/other-rooms.js ***!
-  \*******************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/other-rooms/other-rooms.js":
+/*!************************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/other-rooms/other-rooms.js ***!
+  \************************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
-/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../js/import/functions */ "./src/js/import/functions.js");
- //import { tns } from "tiny-slider";
+/* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
+/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../js/import/functions */ "./themes/parkhotel/src/js/import/functions.js");
 
+
+ //import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 
 
 
 if (document.querySelector(".other-rooms")) {
-  var slider_standard1 = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var slider_standard1 = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".other-rooms-preview-slider__item--standard1",
     items: 1,
     slideBy: "page",
@@ -882,7 +884,7 @@ if (document.querySelector(".other-rooms")) {
     nextButton: ".other-rooms-preview-slider .slider__next--standard1",
     controlsContainer: ".other-rooms-preview-slider-controls--standard1"
   });
-  var slider_standard2 = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var slider_standard2 = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".other-rooms-preview-slider__item--standard2",
     items: 1,
     slideBy: "page",
@@ -894,7 +896,7 @@ if (document.querySelector(".other-rooms")) {
     nextButton: ".other-rooms-preview-slider .slider__next--standard2",
     controlsContainer: ".other-rooms-preview-slider-controls--standard2"
   });
-  var slider_business_standard = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var slider_business_standard = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".other-rooms-preview-slider__item--business_standard",
     items: 1,
     slideBy: "page",
@@ -906,7 +908,7 @@ if (document.querySelector(".other-rooms")) {
     nextButton: ".other-rooms-preview-slider .slider__next--business_standard",
     controlsContainer: ".other-rooms-preview-slider-controls--business_standard"
   });
-  var slider_junior_suite = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var slider_junior_suite = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".other-rooms-preview-slider__item--junior_suite",
     items: 1,
     slideBy: "page",
@@ -918,7 +920,7 @@ if (document.querySelector(".other-rooms")) {
     nextButton: ".other-rooms-preview-slider .slider__next--junior_suite",
     controlsContainer: ".other-rooms-preview-slider-controls--junior_suite"
   });
-  var slider_family_suite = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var slider_family_suite = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".other-rooms-preview-slider__item--family_suite",
     items: 1,
     slideBy: "page",
@@ -930,7 +932,7 @@ if (document.querySelector(".other-rooms")) {
     nextButton: ".other-rooms-preview-slider .slider__next--family_suite",
     controlsContainer: ".other-rooms-preview-slider-controls--family_suite"
   });
-  var slider_vip_suite = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var slider_vip_suite = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".other-rooms-preview-slider__item--vip_suite",
     items: 1,
     slideBy: "page",
@@ -942,7 +944,7 @@ if (document.querySelector(".other-rooms")) {
     nextButton: ".other-rooms-preview-slider .slider__next--vip_suite",
     controlsContainer: ".other-rooms-preview-slider-controls--vip_suite"
   });
-  var slider_suite = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var slider_suite = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".other-rooms-preview-slider__item--suite",
     items: 1,
     slideBy: "page",
@@ -991,10 +993,10 @@ if (document.querySelector(".other-rooms")) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/restaurants-info/restaurants-info.js":
-/*!*****************************************************************!*\
-  !*** ./src/blocks/modules/restaurants-info/restaurants-info.js ***!
-  \*****************************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/restaurants-info/restaurants-info.js":
+/*!**********************************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/restaurants-info/restaurants-info.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1002,24 +1004,25 @@ if (document.querySelector(".other-rooms")) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/restaurants/restaurants.js":
-/*!*******************************************************!*\
-  !*** ./src/blocks/modules/restaurants/restaurants.js ***!
-  \*******************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/restaurants/restaurants.js":
+/*!************************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/restaurants/restaurants.js ***!
+  \************************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
-/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../js/import/functions */ "./src/js/import/functions.js");
- //import { tns } from "tiny-slider";
+/* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
+/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../js/import/functions */ "./themes/parkhotel/src/js/import/functions.js");
 
+
+ //import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 
 
 
 if (document.querySelector(".restaurants-slider--paradise")) {
-  var restaurants_slider_paradise = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var restaurants_slider_paradise = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".restaurants-slider--paradise",
     items: 1,
     slideBy: "page",
@@ -1034,7 +1037,7 @@ if (document.querySelector(".restaurants-slider--paradise")) {
 }
 
 if (document.querySelector(".restaurants-slider--prado")) {
-  var restaurants_slider_prado = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var restaurants_slider_prado = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".restaurants-slider--prado",
     items: 1,
     slideBy: "page",
@@ -1049,7 +1052,7 @@ if (document.querySelector(".restaurants-slider--prado")) {
 }
 
 if (document.querySelector(".restaurants-slider--ingreco")) {
-  var restaurants_slider_ingreco = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var restaurants_slider_ingreco = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".restaurants-slider--ingreco",
     items: 1,
     slideBy: "page",
@@ -1064,7 +1067,7 @@ if (document.querySelector(".restaurants-slider--ingreco")) {
 }
 
 if (document.querySelector(".restaurants-slider--weddings")) {
-  var restaurants_slider_weddings = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var restaurants_slider_weddings = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".restaurants-slider--weddings",
     items: 1,
     slideBy: "page",
@@ -1128,10 +1131,10 @@ if (document.querySelector(".restaurants")) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/room-bottom/room-bottom.js":
-/*!*******************************************************!*\
-  !*** ./src/blocks/modules/room-bottom/room-bottom.js ***!
-  \*******************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/room-bottom/room-bottom.js":
+/*!************************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/room-bottom/room-bottom.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1139,24 +1142,25 @@ if (document.querySelector(".restaurants")) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/room/room.js":
-/*!*****************************************!*\
-  !*** ./src/blocks/modules/room/room.js ***!
-  \*****************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/room/room.js":
+/*!**********************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/room/room.js ***!
+  \**********************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
-/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../js/import/functions */ "./src/js/import/functions.js");
- //import { tns } from "tiny-slider";
+/* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
+/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../js/import/functions */ "./themes/parkhotel/src/js/import/functions.js");
 
+
+ //import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 
 
 
 if (document.querySelector(".room")) {
-  var room_slider = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var room_slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".room-slider",
     items: 1,
     slideBy: "page",
@@ -1205,24 +1209,25 @@ if (document.querySelector(".room")) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/rooms/rooms.js":
-/*!*******************************************!*\
-  !*** ./src/blocks/modules/rooms/rooms.js ***!
-  \*******************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/rooms/rooms.js":
+/*!************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/rooms/rooms.js ***!
+  \************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
-/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../js/import/functions */ "./src/js/import/functions.js");
- //import { tns } from "tiny-slider";
+/* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
+/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../js/import/functions */ "./themes/parkhotel/src/js/import/functions.js");
 
+
+ //import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 
 
 
 if (document.querySelector(".rooms")) {
-  var slider_standard1 = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var slider_standard1 = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".rooms-preview-slider__item--standard1",
     items: 1,
     slideBy: "page",
@@ -1234,7 +1239,7 @@ if (document.querySelector(".rooms")) {
     nextButton: ".rooms-preview-slider .slider__next--standard1",
     controlsContainer: ".rooms-preview-slider-controls--standard1"
   });
-  var slider_standard2 = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var slider_standard2 = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".rooms-preview-slider__item--standard2",
     items: 1,
     slideBy: "page",
@@ -1246,7 +1251,7 @@ if (document.querySelector(".rooms")) {
     nextButton: ".rooms-preview-slider .slider__next--standard2",
     controlsContainer: ".rooms-preview-slider-controls--standard2"
   });
-  var slider_business_standard = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var slider_business_standard = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".rooms-preview-slider__item--business_standard",
     items: 1,
     slideBy: "page",
@@ -1258,7 +1263,7 @@ if (document.querySelector(".rooms")) {
     nextButton: ".rooms-preview-slider .slider__next--business_standard",
     controlsContainer: ".rooms-preview-slider-controls--business_standard"
   });
-  var slider_junior_suite = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var slider_junior_suite = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".rooms-preview-slider__item--junior_suite",
     items: 1,
     slideBy: "page",
@@ -1270,7 +1275,7 @@ if (document.querySelector(".rooms")) {
     nextButton: ".rooms-preview-slider .slider__next--junior_suite",
     controlsContainer: ".rooms-preview-slider-controls--junior_suite"
   });
-  var slider_family_suite = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var slider_family_suite = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".rooms-preview-slider__item--family_suite",
     items: 1,
     slideBy: "page",
@@ -1282,7 +1287,7 @@ if (document.querySelector(".rooms")) {
     nextButton: ".rooms-preview-slider .slider__next--family_suite",
     controlsContainer: ".rooms-preview-slider-controls--family_suite"
   });
-  var slider_vip_suite = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var slider_vip_suite = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".rooms-preview-slider__item--vip_suite",
     items: 1,
     slideBy: "page",
@@ -1294,7 +1299,7 @@ if (document.querySelector(".rooms")) {
     nextButton: ".rooms-preview-slider .slider__next--vip_suite",
     controlsContainer: ".rooms-preview-slider-controls--vip_suite"
   });
-  var slider_suite = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var slider_suite = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".rooms-preview-slider__item--suite",
     items: 1,
     slideBy: "page",
@@ -1346,16 +1351,16 @@ if (document.querySelector(".rooms")) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/salon-price/salon-price.js":
-/*!*******************************************************!*\
-  !*** ./src/blocks/modules/salon-price/salon-price.js ***!
-  \*******************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/salon-price/salon-price.js":
+/*!************************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/salon-price/salon-price.js ***!
+  \************************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../js/import/functions */ "./src/js/import/functions.js");
+/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../js/import/functions */ "./themes/parkhotel/src/js/import/functions.js");
 
 
 if (document.querySelector(".salon-price")) {
@@ -1386,22 +1391,22 @@ if (document.querySelector(".salon-price")) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/salon/salon.js":
-/*!*******************************************!*\
-  !*** ./src/blocks/modules/salon/salon.js ***!
-  \*******************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/salon/salon.js":
+/*!************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/salon/salon.js ***!
+  \************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
- //import { tns } from "tiny-slider";
+/* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
 
 
+ //import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 
-if (document.querySelector(".salon-gallery-slider")) {
-  var salon_gallery_slider = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+if (document.querySelector(".salon")) {
+  var salon_gallery_slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".salon-gallery-slider",
     items: 1,
     slideBy: "page",
@@ -1413,11 +1418,10 @@ if (document.querySelector(".salon-gallery-slider")) {
     nextButton: ".salon .slider__next",
     controlsContainer: ".salon-gallery-slider-controls"
   });
-}
-
-var salon_gallery_slider_icon = document.querySelectorAll(".salon .slider__icon");
-salon_gallery_slider_icon.forEach(function (icon) {
-  icon.addEventListener("click", function (event) {
+  var salon_gallery_slider_icons = document.querySelector(".salon-gallery-slider-controls");
+  salon_gallery_slider_icons.addEventListener("click", function (event) {
+    var icon = event.target;
+    if (!icon.classList.contains("slider__icon")) return;
     event.preventDefault();
     var prev_icon = document.querySelector(".salon .slider__icon--active");
     var salon_gallery_slider_item = document.querySelector(".salon-gallery-slider");
@@ -1435,28 +1439,29 @@ salon_gallery_slider_icon.forEach(function (icon) {
     icon.classList.toggle("slider__icon--active");
     prev_icon.classList.toggle("slider__icon--active");
   });
-});
+}
 
 /***/ }),
 
-/***/ "./src/blocks/modules/services/services.js":
-/*!*************************************************!*\
-  !*** ./src/blocks/modules/services/services.js ***!
-  \*************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/services/services.js":
+/*!******************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/services/services.js ***!
+  \******************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
-/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../js/import/functions */ "./src/js/import/functions.js");
- //import { tns } from "tiny-slider";
+/* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
+/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../js/import/functions */ "./themes/parkhotel/src/js/import/functions.js");
 
+
+ //import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 
 
 
 if (document.querySelector(".services-preview-slider")) {
-  var restaurant_slider = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var restaurant_slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".services-preview-slider__item--restaurant",
     items: 1.9,
     slideBy: 1,
@@ -1489,7 +1494,7 @@ if (document.querySelector(".services-preview-slider")) {
       }
     }
   });
-  var conference_slider = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var conference_slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".services-preview-slider__item--conference",
     items: 1.9,
     slideBy: 1,
@@ -1522,7 +1527,7 @@ if (document.querySelector(".services-preview-slider")) {
       }
     }
   });
-  var fitness_slider = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
+  var fitness_slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".services-preview-slider__item--fitness",
     items: 1.9,
     slideBy: 1,
@@ -1585,10 +1590,10 @@ if (document.querySelector(".services")) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/transfer-price/transfer-price.js":
-/*!*************************************************************!*\
-  !*** ./src/blocks/modules/transfer-price/transfer-price.js ***!
-  \*************************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/transfer-price/transfer-price.js":
+/*!******************************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/transfer-price/transfer-price.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1596,10 +1601,10 @@ if (document.querySelector(".services")) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/transfer/transfer.js":
-/*!*************************************************!*\
-  !*** ./src/blocks/modules/transfer/transfer.js ***!
-  \*************************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/transfer/transfer.js":
+/*!******************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/transfer/transfer.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1607,10 +1612,10 @@ if (document.querySelector(".services")) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/welcome/welcome.js":
-/*!***********************************************!*\
-  !*** ./src/blocks/modules/welcome/welcome.js ***!
-  \***********************************************/
+/***/ "./themes/parkhotel/src/blocks/modules/welcome/welcome.js":
+/*!****************************************************************!*\
+  !*** ./themes/parkhotel/src/blocks/modules/welcome/welcome.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1627,10 +1632,10 @@ if (document.querySelector('.welcome-down')) {
 
 /***/ }),
 
-/***/ "./src/js/import/functions.js":
-/*!************************************!*\
-  !*** ./src/js/import/functions.js ***!
-  \************************************/
+/***/ "./themes/parkhotel/src/js/import/functions.js":
+/*!*****************************************************!*\
+  !*** ./themes/parkhotel/src/js/import/functions.js ***!
+  \*****************************************************/
 /*! exports provided: createRipple, placeLineX, placeLineY */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1671,64 +1676,64 @@ function placeLineY(el, attributes) {
 
 /***/ }),
 
-/***/ "./src/js/import/modules.js":
-/*!**********************************!*\
-  !*** ./src/js/import/modules.js ***!
-  \**********************************/
+/***/ "./themes/parkhotel/src/js/import/modules.js":
+/*!***************************************************!*\
+  !*** ./themes/parkhotel/src/js/import/modules.js ***!
+  \***************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_404_404__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/404/404 */ "./src/blocks/modules/404/404.js");
+/* harmony import */ var _modules_404_404__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/404/404 */ "./themes/parkhotel/src/blocks/modules/404/404.js");
 /* harmony import */ var _modules_404_404__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_404_404__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_about_about__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/about/about */ "./src/blocks/modules/about/about.js");
+/* harmony import */ var _modules_about_about__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/about/about */ "./themes/parkhotel/src/blocks/modules/about/about.js");
 /* harmony import */ var _modules_about_about__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_about_about__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _modules_about_gallery_about_gallery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/about-gallery/about-gallery */ "./src/blocks/modules/about-gallery/about-gallery.js");
-/* harmony import */ var _modules_book_book__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/book/book */ "./src/blocks/modules/book/book.js");
+/* harmony import */ var _modules_about_gallery_about_gallery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/about-gallery/about-gallery */ "./themes/parkhotel/src/blocks/modules/about-gallery/about-gallery.js");
+/* harmony import */ var _modules_book_book__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/book/book */ "./themes/parkhotel/src/blocks/modules/book/book.js");
 /* harmony import */ var _modules_book_book__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_book_book__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _modules_conference_conference__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/conference/conference */ "./src/blocks/modules/conference/conference.js");
-/* harmony import */ var _modules_conference_booking_conference_booking__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/conference-booking/conference-booking */ "./src/blocks/modules/conference-booking/conference-booking.js");
+/* harmony import */ var _modules_conference_conference__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/conference/conference */ "./themes/parkhotel/src/blocks/modules/conference/conference.js");
+/* harmony import */ var _modules_conference_booking_conference_booking__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/conference-booking/conference-booking */ "./themes/parkhotel/src/blocks/modules/conference-booking/conference-booking.js");
 /* harmony import */ var _modules_conference_booking_conference_booking__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_conference_booking_conference_booking__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _modules_conference_info_conference_info__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/conference-info/conference-info */ "./src/blocks/modules/conference-info/conference-info.js");
+/* harmony import */ var _modules_conference_info_conference_info__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/conference-info/conference-info */ "./themes/parkhotel/src/blocks/modules/conference-info/conference-info.js");
 /* harmony import */ var _modules_conference_info_conference_info__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_conference_info_conference_info__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/contacts/contacts */ "./src/blocks/modules/contacts/contacts.js");
+/* harmony import */ var _modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/contacts/contacts */ "./themes/parkhotel/src/blocks/modules/contacts/contacts.js");
 /* harmony import */ var _modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_contacts_contacts__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _modules_extra_services_extra_services__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/extra-services/extra-services */ "./src/blocks/modules/extra-services/extra-services.js");
+/* harmony import */ var _modules_extra_services_extra_services__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/extra-services/extra-services */ "./themes/parkhotel/src/blocks/modules/extra-services/extra-services.js");
 /* harmony import */ var _modules_extra_services_extra_services__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_extra_services_extra_services__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _modules_features_features__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/features/features */ "./src/blocks/modules/features/features.js");
+/* harmony import */ var _modules_features_features__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/features/features */ "./themes/parkhotel/src/blocks/modules/features/features.js");
 /* harmony import */ var _modules_features_features__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_features_features__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _modules_fitness_fitness__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/fitness/fitness */ "./src/blocks/modules/fitness/fitness.js");
-/* harmony import */ var _modules_fitness_price_fitness_price__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/fitness-price/fitness-price */ "./src/blocks/modules/fitness-price/fitness-price.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_fitness_fitness__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/fitness/fitness */ "./themes/parkhotel/src/blocks/modules/fitness/fitness.js");
+/* harmony import */ var _modules_fitness_price_fitness_price__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! %modules%/fitness-price/fitness-price */ "./themes/parkhotel/src/blocks/modules/fitness-price/fitness-price.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! %modules%/footer/footer */ "./themes/parkhotel/src/blocks/modules/footer/footer.js");
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _modules_gallery_gallery__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/gallery/gallery */ "./src/blocks/modules/gallery/gallery.js");
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
+/* harmony import */ var _modules_gallery_gallery__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! %modules%/gallery/gallery */ "./themes/parkhotel/src/blocks/modules/gallery/gallery.js");
+/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! %modules%/header/header */ "./themes/parkhotel/src/blocks/modules/header/header.js");
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _modules_header_form_header_form__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! %modules%/header-form/header-form */ "./src/blocks/modules/header-form/header-form.js");
+/* harmony import */ var _modules_header_form_header_form__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! %modules%/header-form/header-form */ "./themes/parkhotel/src/blocks/modules/header-form/header-form.js");
 /* harmony import */ var _modules_header_form_header_form__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_modules_header_form_header_form__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _modules_hotel_services_hotel_services__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! %modules%/hotel-services/hotel-services */ "./src/blocks/modules/hotel-services/hotel-services.js");
+/* harmony import */ var _modules_hotel_services_hotel_services__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! %modules%/hotel-services/hotel-services */ "./themes/parkhotel/src/blocks/modules/hotel-services/hotel-services.js");
 /* harmony import */ var _modules_hotel_services_hotel_services__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_modules_hotel_services_hotel_services__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _modules_index_gallery_index_gallery__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! %modules%/index-gallery/index-gallery */ "./src/blocks/modules/index-gallery/index-gallery.js");
-/* harmony import */ var _modules_offers_offers__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! %modules%/offers/offers */ "./src/blocks/modules/offers/offers.js");
-/* harmony import */ var _modules_opinion_opinion__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! %modules%/opinion/opinion */ "./src/blocks/modules/opinion/opinion.js");
+/* harmony import */ var _modules_index_gallery_index_gallery__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! %modules%/index-gallery/index-gallery */ "./themes/parkhotel/src/blocks/modules/index-gallery/index-gallery.js");
+/* harmony import */ var _modules_offers_offers__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! %modules%/offers/offers */ "./themes/parkhotel/src/blocks/modules/offers/offers.js");
+/* harmony import */ var _modules_opinion_opinion__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! %modules%/opinion/opinion */ "./themes/parkhotel/src/blocks/modules/opinion/opinion.js");
 /* harmony import */ var _modules_opinion_opinion__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_modules_opinion_opinion__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _modules_other_rooms_other_rooms__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! %modules%/other-rooms/other-rooms */ "./src/blocks/modules/other-rooms/other-rooms.js");
-/* harmony import */ var _modules_restaurants_restaurants__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! %modules%/restaurants/restaurants */ "./src/blocks/modules/restaurants/restaurants.js");
-/* harmony import */ var _modules_restaurants_info_restaurants_info__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! %modules%/restaurants-info/restaurants-info */ "./src/blocks/modules/restaurants-info/restaurants-info.js");
+/* harmony import */ var _modules_other_rooms_other_rooms__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! %modules%/other-rooms/other-rooms */ "./themes/parkhotel/src/blocks/modules/other-rooms/other-rooms.js");
+/* harmony import */ var _modules_restaurants_restaurants__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! %modules%/restaurants/restaurants */ "./themes/parkhotel/src/blocks/modules/restaurants/restaurants.js");
+/* harmony import */ var _modules_restaurants_info_restaurants_info__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! %modules%/restaurants-info/restaurants-info */ "./themes/parkhotel/src/blocks/modules/restaurants-info/restaurants-info.js");
 /* harmony import */ var _modules_restaurants_info_restaurants_info__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_modules_restaurants_info_restaurants_info__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var _modules_room_room__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! %modules%/room/room */ "./src/blocks/modules/room/room.js");
-/* harmony import */ var _modules_rooms_rooms__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! %modules%/rooms/rooms */ "./src/blocks/modules/rooms/rooms.js");
-/* harmony import */ var _modules_room_bottom_room_bottom__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! %modules%/room-bottom/room-bottom */ "./src/blocks/modules/room-bottom/room-bottom.js");
+/* harmony import */ var _modules_room_room__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! %modules%/room/room */ "./themes/parkhotel/src/blocks/modules/room/room.js");
+/* harmony import */ var _modules_rooms_rooms__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! %modules%/rooms/rooms */ "./themes/parkhotel/src/blocks/modules/rooms/rooms.js");
+/* harmony import */ var _modules_room_bottom_room_bottom__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! %modules%/room-bottom/room-bottom */ "./themes/parkhotel/src/blocks/modules/room-bottom/room-bottom.js");
 /* harmony import */ var _modules_room_bottom_room_bottom__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_modules_room_bottom_room_bottom__WEBPACK_IMPORTED_MODULE_25__);
-/* harmony import */ var _modules_salon_salon__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! %modules%/salon/salon */ "./src/blocks/modules/salon/salon.js");
-/* harmony import */ var _modules_salon_price_salon_price__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! %modules%/salon-price/salon-price */ "./src/blocks/modules/salon-price/salon-price.js");
-/* harmony import */ var _modules_services_services__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! %modules%/services/services */ "./src/blocks/modules/services/services.js");
-/* harmony import */ var _modules_transfer_transfer__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! %modules%/transfer/transfer */ "./src/blocks/modules/transfer/transfer.js");
+/* harmony import */ var _modules_salon_salon__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! %modules%/salon/salon */ "./themes/parkhotel/src/blocks/modules/salon/salon.js");
+/* harmony import */ var _modules_salon_price_salon_price__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! %modules%/salon-price/salon-price */ "./themes/parkhotel/src/blocks/modules/salon-price/salon-price.js");
+/* harmony import */ var _modules_services_services__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! %modules%/services/services */ "./themes/parkhotel/src/blocks/modules/services/services.js");
+/* harmony import */ var _modules_transfer_transfer__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! %modules%/transfer/transfer */ "./themes/parkhotel/src/blocks/modules/transfer/transfer.js");
 /* harmony import */ var _modules_transfer_transfer__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(_modules_transfer_transfer__WEBPACK_IMPORTED_MODULE_29__);
-/* harmony import */ var _modules_transfer_price_transfer_price__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! %modules%/transfer-price/transfer-price */ "./src/blocks/modules/transfer-price/transfer-price.js");
+/* harmony import */ var _modules_transfer_price_transfer_price__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! %modules%/transfer-price/transfer-price */ "./themes/parkhotel/src/blocks/modules/transfer-price/transfer-price.js");
 /* harmony import */ var _modules_transfer_price_transfer_price__WEBPACK_IMPORTED_MODULE_30___default = /*#__PURE__*/__webpack_require__.n(_modules_transfer_price_transfer_price__WEBPACK_IMPORTED_MODULE_30__);
-/* harmony import */ var _modules_welcome_welcome__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! %modules%/welcome/welcome */ "./src/blocks/modules/welcome/welcome.js");
+/* harmony import */ var _modules_welcome_welcome__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! %modules%/welcome/welcome */ "./themes/parkhotel/src/blocks/modules/welcome/welcome.js");
 /* harmony import */ var _modules_welcome_welcome__WEBPACK_IMPORTED_MODULE_31___default = /*#__PURE__*/__webpack_require__.n(_modules_welcome_welcome__WEBPACK_IMPORTED_MODULE_31__);
 
 
@@ -1765,22 +1770,294 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/js/index.js":
-/*!*************************!*\
-  !*** ./src/js/index.js ***!
-  \*************************/
+/***/ "./themes/parkhotel/src/js/import/wow.min.js":
+/*!***************************************************!*\
+  !*** ./themes/parkhotel/src/js/import/wow.min.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*! WOW - v1.1.2 - 2015-04-07
+* Copyright (c) 2015 Matthieu Aussaguel; Licensed MIT */
+(function () {
+  var a,
+      b,
+      c,
+      d,
+      e,
+      f = function f(a, b) {
+    return function () {
+      return a.apply(b, arguments);
+    };
+  },
+      g = [].indexOf || function (a) {
+    for (var b = 0, c = this.length; c > b; b++) {
+      if (b in this && this[b] === a) return b;
+    }
+
+    return -1;
+  };
+
+  b = function () {
+    function a() {}
+
+    return a.prototype.extend = function (a, b) {
+      var c, d;
+
+      for (c in b) {
+        d = b[c], null == a[c] && (a[c] = d);
+      }
+
+      return a;
+    }, a.prototype.isMobile = function (a) {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(a);
+    }, a.prototype.createEvent = function (a, b, c, d) {
+      var e;
+      return null == b && (b = !1), null == c && (c = !1), null == d && (d = null), null != document.createEvent ? (e = document.createEvent("CustomEvent"), e.initCustomEvent(a, b, c, d)) : null != document.createEventObject ? (e = document.createEventObject(), e.eventType = a) : e.eventName = a, e;
+    }, a.prototype.emitEvent = function (a, b) {
+      return null != a.dispatchEvent ? a.dispatchEvent(b) : b in (null != a) ? a[b]() : "on" + b in (null != a) ? a["on" + b]() : void 0;
+    }, a.prototype.addEvent = function (a, b, c) {
+      return null != a.addEventListener ? a.addEventListener(b, c, !1) : null != a.attachEvent ? a.attachEvent("on" + b, c) : a[b] = c;
+    }, a.prototype.removeEvent = function (a, b, c) {
+      return null != a.removeEventListener ? a.removeEventListener(b, c, !1) : null != a.detachEvent ? a.detachEvent("on" + b, c) : delete a[b];
+    }, a.prototype.innerHeight = function () {
+      return "innerHeight" in window ? window.innerHeight : document.documentElement.clientHeight;
+    }, a;
+  }(), c = this.WeakMap || this.MozWeakMap || (c = function () {
+    function a() {
+      this.keys = [], this.values = [];
+    }
+
+    return a.prototype.get = function (a) {
+      var b, c, d, e, f;
+
+      for (f = this.keys, b = d = 0, e = f.length; e > d; b = ++d) {
+        if (c = f[b], c === a) return this.values[b];
+      }
+    }, a.prototype.set = function (a, b) {
+      var c, d, e, f, g;
+
+      for (g = this.keys, c = e = 0, f = g.length; f > e; c = ++e) {
+        if (d = g[c], d === a) return void (this.values[c] = b);
+      }
+
+      return this.keys.push(a), this.values.push(b);
+    }, a;
+  }()), a = this.MutationObserver || this.WebkitMutationObserver || this.MozMutationObserver || (a = function () {
+    function a() {
+      "undefined" != typeof console && null !== console && console.warn("MutationObserver is not supported by your browser."), "undefined" != typeof console && null !== console && console.warn("WOW.js cannot detect dom mutations, please call .sync() after loading new content.");
+    }
+
+    return a.notSupported = !0, a.prototype.observe = function () {}, a;
+  }()), d = this.getComputedStyle || function (a) {
+    return this.getPropertyValue = function (b) {
+      var c;
+      return "float" === b && (b = "styleFloat"), e.test(b) && b.replace(e, function (a, b) {
+        return b.toUpperCase();
+      }), (null != (c = a.currentStyle) ? c[b] : void 0) || null;
+    }, this;
+  }, e = /(\-([a-z]){1})/g, this.WOW = function () {
+    function e(a) {
+      null == a && (a = {}), this.scrollCallback = f(this.scrollCallback, this), this.scrollHandler = f(this.scrollHandler, this), this.resetAnimation = f(this.resetAnimation, this), this.start = f(this.start, this), this.scrolled = !0, this.config = this.util().extend(a, this.defaults), this.animationNameCache = new c(), this.wowEvent = this.util().createEvent(this.config.boxClass);
+    }
+
+    return e.prototype.defaults = {
+      boxClass: "wow",
+      animateClass: "animated",
+      offset: 0,
+      mobile: !0,
+      live: !0,
+      callback: null
+    }, e.prototype.init = function () {
+      var a;
+      return this.element = window.document.documentElement, "interactive" === (a = document.readyState) || "complete" === a ? this.start() : this.util().addEvent(document, "DOMContentLoaded", this.start), this.finished = [];
+    }, e.prototype.start = function () {
+      var b, c, d, e;
+      if (this.stopped = !1, this.boxes = function () {
+        var a, c, d, e;
+
+        for (d = this.element.querySelectorAll("." + this.config.boxClass), e = [], a = 0, c = d.length; c > a; a++) {
+          b = d[a], e.push(b);
+        }
+
+        return e;
+      }.call(this), this.all = function () {
+        var a, c, d, e;
+
+        for (d = this.boxes, e = [], a = 0, c = d.length; c > a; a++) {
+          b = d[a], e.push(b);
+        }
+
+        return e;
+      }.call(this), this.boxes.length) if (this.disabled()) this.resetStyle();else for (e = this.boxes, c = 0, d = e.length; d > c; c++) {
+        b = e[c], this.applyStyle(b, !0);
+      }
+      return this.disabled() || (this.util().addEvent(window, "scroll", this.scrollHandler), this.util().addEvent(window, "resize", this.scrollHandler), this.interval = setInterval(this.scrollCallback, 50)), this.config.live ? new a(function (a) {
+        return function (b) {
+          var c, d, e, f, g;
+
+          for (g = [], c = 0, d = b.length; d > c; c++) {
+            f = b[c], g.push(function () {
+              var a, b, c, d;
+
+              for (c = f.addedNodes || [], d = [], a = 0, b = c.length; b > a; a++) {
+                e = c[a], d.push(this.doSync(e));
+              }
+
+              return d;
+            }.call(a));
+          }
+
+          return g;
+        };
+      }(this)).observe(document.body, {
+        childList: !0,
+        subtree: !0
+      }) : void 0;
+    }, e.prototype.stop = function () {
+      return this.stopped = !0, this.util().removeEvent(window, "scroll", this.scrollHandler), this.util().removeEvent(window, "resize", this.scrollHandler), null != this.interval ? clearInterval(this.interval) : void 0;
+    }, e.prototype.sync = function () {
+      return a.notSupported ? this.doSync(this.element) : void 0;
+    }, e.prototype.doSync = function (a) {
+      var b, c, d, e, f;
+
+      if (null == a && (a = this.element), 1 === a.nodeType) {
+        for (a = a.parentNode || a, e = a.querySelectorAll("." + this.config.boxClass), f = [], c = 0, d = e.length; d > c; c++) {
+          b = e[c], g.call(this.all, b) < 0 ? (this.boxes.push(b), this.all.push(b), this.stopped || this.disabled() ? this.resetStyle() : this.applyStyle(b, !0), f.push(this.scrolled = !0)) : f.push(void 0);
+        }
+
+        return f;
+      }
+    }, e.prototype.show = function (a) {
+      return this.applyStyle(a), a.className = a.className + " " + this.config.animateClass, null != this.config.callback && this.config.callback(a), this.util().emitEvent(a, this.wowEvent), this.util().addEvent(a, "animationend", this.resetAnimation), this.util().addEvent(a, "oanimationend", this.resetAnimation), this.util().addEvent(a, "webkitAnimationEnd", this.resetAnimation), this.util().addEvent(a, "MSAnimationEnd", this.resetAnimation), a;
+    }, e.prototype.applyStyle = function (a, b) {
+      var c, d, e;
+      return d = a.getAttribute("data-wow-duration"), c = a.getAttribute("data-wow-delay"), e = a.getAttribute("data-wow-iteration"), this.animate(function (f) {
+        return function () {
+          return f.customStyle(a, b, d, c, e);
+        };
+      }(this));
+    }, e.prototype.animate = function () {
+      return "requestAnimationFrame" in window ? function (a) {
+        return window.requestAnimationFrame(a);
+      } : function (a) {
+        return a();
+      };
+    }(), e.prototype.resetStyle = function () {
+      var a, b, c, d, e;
+
+      for (d = this.boxes, e = [], b = 0, c = d.length; c > b; b++) {
+        a = d[b], e.push(a.style.visibility = "visible");
+      }
+
+      return e;
+    }, e.prototype.resetAnimation = function (a) {
+      var b;
+      return a.type.toLowerCase().indexOf("animationend") >= 0 ? (b = a.target || a.srcElement, b.className = b.className.replace(this.config.animateClass, "").trim()) : void 0;
+    }, e.prototype.customStyle = function (a, b, c, d, e) {
+      return b && this.cacheAnimationName(a), a.style.visibility = b ? "hidden" : "visible", c && this.vendorSet(a.style, {
+        animationDuration: c
+      }), d && this.vendorSet(a.style, {
+        animationDelay: d
+      }), e && this.vendorSet(a.style, {
+        animationIterationCount: e
+      }), this.vendorSet(a.style, {
+        animationName: b ? "none" : this.cachedAnimationName(a)
+      }), a;
+    }, e.prototype.vendors = ["moz", "webkit"], e.prototype.vendorSet = function (a, b) {
+      var c, d, e, f;
+      d = [];
+
+      for (c in b) {
+        e = b[c], a["" + c] = e, d.push(function () {
+          var b, d, g, h;
+
+          for (g = this.vendors, h = [], b = 0, d = g.length; d > b; b++) {
+            f = g[b], h.push(a["" + f + c.charAt(0).toUpperCase() + c.substr(1)] = e);
+          }
+
+          return h;
+        }.call(this));
+      }
+
+      return d;
+    }, e.prototype.vendorCSS = function (a, b) {
+      var c, e, f, g, h, i;
+
+      for (h = d(a), g = h.getPropertyCSSValue(b), f = this.vendors, c = 0, e = f.length; e > c; c++) {
+        i = f[c], g = g || h.getPropertyCSSValue("-" + i + "-" + b);
+      }
+
+      return g;
+    }, e.prototype.animationName = function (a) {
+      var b;
+
+      try {
+        b = this.vendorCSS(a, "animation-name").cssText;
+      } catch (c) {
+        b = d(a).getPropertyValue("animation-name");
+      }
+
+      return "none" === b ? "" : b;
+    }, e.prototype.cacheAnimationName = function (a) {
+      return this.animationNameCache.set(a, this.animationName(a));
+    }, e.prototype.cachedAnimationName = function (a) {
+      return this.animationNameCache.get(a);
+    }, e.prototype.scrollHandler = function () {
+      return this.scrolled = !0;
+    }, e.prototype.scrollCallback = function () {
+      var a;
+      return !this.scrolled || (this.scrolled = !1, this.boxes = function () {
+        var b, c, d, e;
+
+        for (d = this.boxes, e = [], b = 0, c = d.length; c > b; b++) {
+          a = d[b], a && (this.isVisible(a) ? this.show(a) : e.push(a));
+        }
+
+        return e;
+      }.call(this), this.boxes.length || this.config.live) ? void 0 : this.stop();
+    }, e.prototype.offsetTop = function (a) {
+      for (var b; void 0 === a.offsetTop;) {
+        a = a.parentNode;
+      }
+
+      for (b = a.offsetTop; a = a.offsetParent;) {
+        b += a.offsetTop;
+      }
+
+      return b;
+    }, e.prototype.isVisible = function (a) {
+      var b, c, d, e, f;
+      return c = a.getAttribute("data-wow-offset") || this.config.offset, f = window.pageYOffset, e = f + Math.min(this.element.clientHeight, this.util().innerHeight()) - c, d = this.offsetTop(a), b = d + a.clientHeight, e >= d && b >= f;
+    }, e.prototype.util = function () {
+      return null != this._util ? this._util : this._util = new b();
+    }, e.prototype.disabled = function () {
+      return !this.config.mobile && this.util().isMobile(navigator.userAgent);
+    }, e;
+  }();
+}).call(this);
+
+/***/ }),
+
+/***/ "./themes/parkhotel/src/js/index.js":
+/*!******************************************!*\
+  !*** ./themes/parkhotel/src/js/index.js ***!
+  \******************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _import_modules__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./import/modules */ "./src/js/import/modules.js");
-/* harmony import */ var _import_functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./import/functions */ "./src/js/import/functions.js");
+/* harmony import */ var _import_modules__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./import/modules */ "./themes/parkhotel/src/js/import/modules.js");
+/* harmony import */ var _import_wow_min__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./import/wow.min */ "./themes/parkhotel/src/js/import/wow.min.js");
+/* harmony import */ var _import_wow_min__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_import_wow_min__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _import_functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./import/functions */ "./themes/parkhotel/src/js/import/functions.js");
 function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 
 
 
@@ -1798,13 +2075,15 @@ try {
         window.location = event.target.href ? event.target.href : event.target.parentElement.href;
       }, 500);
     });
-    button.addEventListener("click", _import_functions__WEBPACK_IMPORTED_MODULE_1__["createRipple"]);
+    button.addEventListener("click", _import_functions__WEBPACK_IMPORTED_MODULE_2__["createRipple"]);
   }
 } catch (err) {
   _iterator.e(err);
 } finally {
   _iterator.f();
 }
+
+new _import_wow_min__WEBPACK_IMPORTED_MODULE_1__["WOW"]().init();
 
 /***/ })
 
