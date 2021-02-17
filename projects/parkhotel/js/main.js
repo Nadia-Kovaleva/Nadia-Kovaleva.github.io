@@ -304,7 +304,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-if (document.querySelector(".conference-slider--olimp")) {
+if (document.querySelector(".conference")) {
   var conference_slider_olimp = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".conference-slider--olimp",
     items: 1,
@@ -317,9 +317,7 @@ if (document.querySelector(".conference-slider--olimp")) {
     nextButton: ".conference .slider__next--olimp",
     controlsContainer: ".conference-slider-controls--olimp"
   });
-}
-
-if (document.querySelector(".conference-slider--iliada")) {
+  Object(_js_import_functions__WEBPACK_IMPORTED_MODULE_1__["setCounter"])('conference', conference_slider_olimp, 'conference-olimp');
   var conference_slider_iliada = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".conference-slider--iliada",
     items: 1,
@@ -332,9 +330,7 @@ if (document.querySelector(".conference-slider--iliada")) {
     nextButton: ".conference .slider__next--iliada",
     controlsContainer: ".conference-slider-controls--iliada"
   });
-}
-
-if (document.querySelector(".conference-slider--germes")) {
+  Object(_js_import_functions__WEBPACK_IMPORTED_MODULE_1__["setCounter"])('conference', conference_slider_iliada, 'conference-iliada');
   var conference_slider_germes = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".conference-slider--germes",
     items: 1,
@@ -347,9 +343,7 @@ if (document.querySelector(".conference-slider--germes")) {
     nextButton: ".conference .slider__next--germes",
     controlsContainer: ".conference-slider-controls--germes"
   });
-}
-
-if (document.querySelector(".conference")) {
+  Object(_js_import_functions__WEBPACK_IMPORTED_MODULE_1__["setCounter"])('conference', conference_slider_germes, 'conference-germes');
   var conference_slider_icon = document.querySelectorAll(".conference .slider__icon");
   conference_slider_icon.forEach(function (icon) {
     icon.addEventListener("click", function (event) {
@@ -515,11 +509,14 @@ if (document.querySelector(".fitness-price")) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
+/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../js/import/functions */ "./themes/parkhotel/src/js/import/functions.js");
 
 
  //import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
 
-if (document.querySelector(".fitness-gallery-slider")) {
+
+
+if (document.querySelector(".fitness")) {
   var fitness_gallery_slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".fitness-gallery-slider",
     items: 1,
@@ -527,34 +524,33 @@ if (document.querySelector(".fitness-gallery-slider")) {
     autoplay: true,
     touch: true,
     mouseDrag: true,
-    //destroy: destroy(),
     prevButton: ".fitness .slider__prev",
     nextButton: ".fitness .slider__next",
     controlsContainer: ".fitness-gallery-slider-controls"
   });
-}
+  Object(_js_import_functions__WEBPACK_IMPORTED_MODULE_1__["setCounter"])('fitness', fitness_gallery_slider, 'fitness-gallery');
+  var fitness_gallery_slider_icon = document.querySelectorAll(".fitness .slider__icon");
+  fitness_gallery_slider_icon.forEach(function (icon) {
+    icon.addEventListener("click", function (event) {
+      event.preventDefault();
+      var prev_icon = document.querySelector(".fitness .slider__icon--active");
+      var fitness_gallery_slider_item = document.querySelector(".fitness-gallery-slider");
+      var fitness_gallery_slider_row = document.querySelector(".fitness-gallery-slider-row");
+      document.querySelector(".fitness-gallery-slider-controls").classList.toggle("fitness-gallery-slider-controls--module");
 
-var fitness_gallery_slider_icon = document.querySelectorAll(".fitness .slider__icon");
-fitness_gallery_slider_icon.forEach(function (icon) {
-  icon.addEventListener("click", function (event) {
-    event.preventDefault();
-    var prev_icon = document.querySelector(".fitness .slider__icon--active");
-    var fitness_gallery_slider_item = document.querySelector(".fitness-gallery-slider");
-    var fitness_gallery_slider_row = document.querySelector(".fitness-gallery-slider-row");
-    document.querySelector(".fitness-gallery-slider-controls").classList.toggle("fitness-gallery-slider-controls--module");
+      if (fitness_gallery_slider_item) {
+        fitness_gallery_slider_item.classList.remove("fitness-gallery-slider");
+        fitness_gallery_slider_item.classList.add("fitness-gallery-slider-row");
+      } else if (fitness_gallery_slider_row) {
+        fitness_gallery_slider_row.classList.remove("fitness-gallery-slider-row");
+        fitness_gallery_slider_row.classList.add("fitness-gallery-slider");
+      }
 
-    if (fitness_gallery_slider_item) {
-      fitness_gallery_slider_item.classList.remove("fitness-gallery-slider");
-      fitness_gallery_slider_item.classList.add("fitness-gallery-slider-row");
-    } else if (fitness_gallery_slider_row) {
-      fitness_gallery_slider_row.classList.remove("fitness-gallery-slider-row");
-      fitness_gallery_slider_row.classList.add("fitness-gallery-slider");
-    }
-
-    icon.classList.toggle("slider__icon--active");
-    prev_icon.classList.toggle("slider__icon--active");
+      icon.classList.toggle("slider__icon--active");
+      prev_icon.classList.toggle("slider__icon--active");
+    });
   });
-});
+}
 
 /***/ }),
 
@@ -1026,7 +1022,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-if (document.querySelector(".restaurants-slider--paradise")) {
+if (document.querySelector(".restaurants")) {
   var restaurants_slider_paradise = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".restaurants-slider--paradise",
     items: 1,
@@ -1034,14 +1030,11 @@ if (document.querySelector(".restaurants-slider--paradise")) {
     autoplay: true,
     touch: true,
     mouseDrag: true,
-    //destroy: destroy(),
     prevButton: ".restaurants .slider__prev--paradise",
     nextButton: ".restaurants .slider__next--paradise",
     controlsContainer: ".restaurants-slider-controls--paradise"
   });
-}
-
-if (document.querySelector(".restaurants-slider--prado")) {
+  Object(_js_import_functions__WEBPACK_IMPORTED_MODULE_1__["setCounter"])('restaurants', restaurants_slider_paradise, 'restaurants-paradise');
   var restaurants_slider_prado = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".restaurants-slider--prado",
     items: 1,
@@ -1049,14 +1042,11 @@ if (document.querySelector(".restaurants-slider--prado")) {
     autoplay: true,
     touch: true,
     mouseDrag: true,
-    //destroy: destroy(),
     prevButton: ".restaurants .slider__prev--prado",
     nextButton: ".restaurants .slider__next--prado",
     controlsContainer: ".restaurants-slider-controls--prado"
   });
-}
-
-if (document.querySelector(".restaurants-slider--ingreco")) {
+  Object(_js_import_functions__WEBPACK_IMPORTED_MODULE_1__["setCounter"])('restaurants', restaurants_slider_prado, 'restaurants-prado');
   var restaurants_slider_ingreco = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".restaurants-slider--ingreco",
     items: 1,
@@ -1064,14 +1054,11 @@ if (document.querySelector(".restaurants-slider--ingreco")) {
     autoplay: true,
     touch: true,
     mouseDrag: true,
-    //destroy: destroy(),
     prevButton: ".restaurants .slider__prev--ingreco",
     nextButton: ".restaurants .slider__next--ingreco",
     controlsContainer: ".restaurants-slider-controls--ingreco"
   });
-}
-
-if (document.querySelector(".restaurants-slider--weddings")) {
+  Object(_js_import_functions__WEBPACK_IMPORTED_MODULE_1__["setCounter"])('restaurants', restaurants_slider_ingreco, 'restaurants-ingreco');
   var restaurants_slider_weddings = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
     container: ".restaurants-slider--weddings",
     items: 1,
@@ -1079,14 +1066,11 @@ if (document.querySelector(".restaurants-slider--weddings")) {
     autoplay: true,
     touch: true,
     mouseDrag: true,
-    //destroy: destroy(),
     prevButton: ".restaurants .slider__prev--weddings",
     nextButton: ".restaurants .slider__next--weddings",
     controlsContainer: ".restaurants-slider-controls--weddings"
   });
-}
-
-if (document.querySelector(".restaurants")) {
+  Object(_js_import_functions__WEBPACK_IMPORTED_MODULE_1__["setCounter"])('restaurants', restaurants_slider_weddings, 'restaurants-weddings');
   var restaurants_slider_icon = document.querySelectorAll(".restaurants .slider__icon");
   restaurants_slider_icon.forEach(function (icon) {
     icon.addEventListener("click", function (event) {
@@ -1406,9 +1390,12 @@ if (document.querySelector(".salon-price")) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tiny-slider/src/tiny-slider */ "./node_modules/tiny-slider/src/tiny-slider.js");
+/* harmony import */ var _js_import_functions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../js/import/functions */ "./themes/parkhotel/src/js/import/functions.js");
 
 
  //import { tns } from "../../../../node_modules/tiny-slider/src/tiny-slider";
+
+
 
 if (document.querySelector(".salon")) {
   var salon_gallery_slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
@@ -1418,11 +1405,11 @@ if (document.querySelector(".salon")) {
     autoplay: true,
     touch: true,
     mouseDrag: true,
-    //destroy: destroy(),
     prevButton: ".salon .slider__prev",
     nextButton: ".salon .slider__next",
     controlsContainer: ".salon-gallery-slider-controls"
   });
+  Object(_js_import_functions__WEBPACK_IMPORTED_MODULE_1__["setCounter"])('salon', salon_gallery_slider, 'salon-gallery');
   var salon_gallery_slider_icons = document.querySelector(".salon-gallery-slider-controls");
   salon_gallery_slider_icons.addEventListener("click", function (event) {
     var icon = event.target;
