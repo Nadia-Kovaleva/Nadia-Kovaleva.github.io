@@ -2666,7 +2666,7 @@ body section:nth-child(2n) {
 
 .header-form__item {
   width: 894px;
-  height: 80px;
+  height: 78px;
   background: url(../images/temp/booking-dark.jpg) no-repeat top;
 }
 
@@ -3518,7 +3518,7 @@ body section:nth-child(2n) {
 
 .room-col-sticky {
   position: sticky;
-  top: 80px;
+  top: 150px;
 }
 
 .room-features {
@@ -4122,6 +4122,7 @@ body section:nth-child(2n) {
 }
 
 .service-price-list__item {
+  min-width: max-content;
   padding: 0 40px 24px;
   font-size: 15px;
   line-height: 30px;
