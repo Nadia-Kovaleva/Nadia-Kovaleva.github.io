@@ -749,7 +749,6 @@ if (document.querySelector(".other-rooms")) {
         'width': link.clientWidth + 'px',
         'left': link.offsetLeft + 'px'
       });
-      event.preventDefault(); //setTimeout(function(){
 
       if (document.documentElement.clientWidth > 768) {
         event.preventDefault();
@@ -761,7 +760,7 @@ if (document.querySelector(".other-rooms")) {
       room.classList.toggle("other-rooms-preview-list__item--active");
       prev_room.classList.toggle("other-rooms-preview-list__item--active");
       prev_link.classList.toggle("other-rooms-list__item--active");
-      link.classList.toggle("other-rooms-list__item--active"); //}, 500);
+      link.classList.toggle("other-rooms-list__item--active");
     });
     link.addEventListener("click", _js_import_functions__WEBPACK_IMPORTED_MODULE_1__["createRipple"]);
   });
