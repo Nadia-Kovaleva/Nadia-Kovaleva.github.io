@@ -3078,6 +3078,7 @@ body section:nth-child(2n) {
   flex: 0 0 450px;
   width: 450px;
   max-width: 450px;
+  height: 400px;
 }
 
 .other-rooms-preview-slider .tns-nav + button,
@@ -3791,6 +3792,11 @@ body section:nth-child(2n) {
   line-height: 15px;
 }
 
+.rooms-preview-slider {
+  width: 600px;
+  height: 500px;
+}
+
 .rooms-preview-slider .tns-nav + button,
 .rooms-preview-slider .tns-controls {
   display: none;
@@ -3835,6 +3841,113 @@ body section:nth-child(2n) {
 
 .rooms-slider-counter {
   margin-top: 13px;
+}
+
+.rooms-catalog {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  padding: 67px 0 119px;
+  background: #222324 no-repeat center;
+  background-size: cover;
+}
+
+.rooms-catalog:before {
+  position: absolute;
+  top: 0;
+  content: "";
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.rooms-catalog--shadow:before {
+  display: block;
+}
+
+.rooms-catalog .container {
+  position: relative;
+  z-index: 5;
+}
+
+.rooms-catalog-items {
+  margin-top: 53px;
+}
+
+.rooms-catalog__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0 20px 39px;
+  border: 1px solid #63636f;
+  text-decoration: none;
+  color: #fff;
+}
+
+.rooms-catalog__item:last-child {
+  border-top: none;
+}
+
+.rooms-catalog__item:hover {
+  border-color: #a18f57;
+  background: #a18f57;
+}
+
+.rooms-catalog__item:hover .rooms-catalog-sum {
+  margin-right: 33px;
+}
+
+.rooms-catalog__item:hover .rooms-catalog-more {
+  display: block;
+  margin-right: 26px;
+}
+
+.rooms-catalog__item:hover .rooms-catalog__desc {
+  color: #fff;
+}
+
+.rooms-catalog-col:last-child {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: normal;
+}
+
+.rooms-catalog__name {
+  margin-bottom: 4px;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.rooms-catalog__desc {
+  color: #86868c;
+}
+
+.rooms-catalog-sum {
+  margin-right: 60px;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.rooms-catalog-sum--mobile {
+  display: none;
+}
+
+.rooms-catalog-more {
+  display: none;
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 50%;
+  background: #fff url(../images/svg/arrow-gold.svg) no-repeat center;
 }
 
 .service {
@@ -8267,6 +8380,20 @@ body section:nth-child(2n) {
     max-width: 750px;
   }
 
+  .rooms-catalog-col {
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .rooms-catalog-col:last-child {
+    justify-content: flex-end;
+  }
+
+  .rooms-catalog-sum {
+    margin-right: 40px;
+  }
+
   .service-row {
     justify-content: space-between;
   }
@@ -10293,6 +10420,74 @@ body section:nth-child(2n) {
 
   .rooms-preview-slider-controls {
     display: none;
+  }
+
+  .rooms-catalog {
+    padding: 43px 0 46px;
+  }
+
+  .rooms-catalog-items {
+    margin-top: 30px;
+  }
+
+  .rooms-catalog__item {
+    padding: 0;
+  }
+
+  .rooms-catalog__item:hover {
+    background: transparent;
+  }
+
+  .rooms-catalog__item:hover .rooms-catalog-sum {
+    margin-right: 0;
+  }
+
+  .rooms-catalog__item:hover .rooms-catalog-more {
+    display: block;
+    margin-right: auto;
+  }
+
+  .rooms-catalog-col {
+    flex: 0 0 20%;
+    width: 20%;
+    max-width: 20%;
+    min-height: 67px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: normal;
+    justify-content: center;
+    padding: 7px 0 12px;
+  }
+
+  .rooms-catalog-col:first-child {
+    flex: 0 0 80%;
+    width: 80%;
+    max-width: 80%;
+    padding: 7px 0 12px 19px;
+    border-right: 1px solid #63636f;
+  }
+
+  .rooms-catalog__name {
+    font-size: 20px;
+    margin-bottom: -8px;
+  }
+
+  .rooms-catalog-sum {
+    display: none;
+  }
+
+  .rooms-catalog-sum--mobile {
+    display: block;
+    margin: 0;
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .rooms-catalog-more {
+    display: block;
+    margin: 0 auto;
+    background: #a18f57 url(../images/svg/arrow.svg) no-repeat center;
   }
 
   .service {
