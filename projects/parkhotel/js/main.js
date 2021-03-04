@@ -903,7 +903,7 @@ if (rooms_catalog) {
   rooms.forEach(function (room) {
     room.addEventListener("mouseover", function () {
       var room_image = room.dataset.image;
-      var room_image_url = '../images/rooms/' + room_image + '.png';
+      var room_image_url = './images/rooms/' + room_image + '.png';
       rooms_catalog.style.backgroundImage = "url(" + room_image_url + ")";
       rooms_catalog.classList.add("rooms-catalog--shadow");
     });
