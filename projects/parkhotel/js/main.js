@@ -896,20 +896,19 @@ if (document.querySelector(".room")) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var rooms_catalog = document.querySelector(".rooms-catalog");
-
-if (rooms_catalog) {
+if (document.querySelector(".rooms-catalog")) {
   var rooms = document.querySelectorAll(".rooms-catalog__item");
   rooms.forEach(function (room) {
     room.addEventListener("mouseover", function () {
-      var room_image = room.dataset.image;
-      var room_image_url = './images/rooms/' + room_image + '.png';
-      rooms_catalog.style.backgroundImage = "url(" + room_image_url + ")";
-      rooms_catalog.classList.add("rooms-catalog--shadow");
+      var room_image_url = './images/rooms/' + room.dataset.image + '.png';
+      room.style.backgroundImage = "url(" + room_image_url + ")";
+      room.nextElementSibling.classList.add("rooms-catalog__item--border-top");
+      room.classList.add("rooms-catalog__item--effects");
     });
     room.addEventListener("mouseout", function () {
-      rooms_catalog.style.backgroundImage = "none";
-      rooms_catalog.classList.remove("rooms-catalog--shadow");
+      room.style.backgroundImage = "none";
+      room.nextElementSibling.classList.remove("rooms-catalog__item--border-top");
+      room.classList.remove("rooms-catalog__item--effects");
     });
   });
 }

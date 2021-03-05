@@ -3844,32 +3844,14 @@ body section:nth-child(2n) {
 }
 
 .rooms-catalog {
-  position: relative;
   flex: 0 0 100%;
   width: 100%;
   max-width: 100%;
   padding: 67px 0 119px;
-  background: #222324 no-repeat center;
-  background-size: cover;
-}
-
-.rooms-catalog:before {
-  position: absolute;
-  top: 0;
-  content: "";
-  display: none;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.rooms-catalog--shadow:before {
-  display: block;
 }
 
 .rooms-catalog .container {
   position: relative;
-  z-index: 5;
 }
 
 .rooms-catalog-items {
@@ -3877,6 +3859,7 @@ body section:nth-child(2n) {
 }
 
 .rooms-catalog__item {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -3884,17 +3867,56 @@ body section:nth-child(2n) {
   justify-content: space-between;
   padding: 14px 0 20px 39px;
   border: 1px solid #63636f;
+  border-bottom: none;
   text-decoration: none;
   color: #fff;
+  background: #222324 no-repeat center;
+  background-size: cover;
+  background-position-y: bottom;
+  transition: background-position linear 10s;
 }
 
-.rooms-catalog__item:last-child {
+.rooms-catalog__item:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.7));
+}
+
+.rooms-catalog__item:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #222324 no-repeat center;
+  background-size: cover;
+}
+
+.rooms-catalog__item--effects {
+  background-position-y: top;
+}
+
+.rooms-catalog__item--effects:before {
+  display: block;
+}
+
+.rooms-catalog__item--border-top {
   border-top: none;
 }
 
+.rooms-catalog__item:last-child {
+  border-bottom: 1px solid #63636f;
+}
+
 .rooms-catalog__item:hover {
-  border-color: #a18f57;
-  background: #a18f57;
+  border: none;
 }
 
 .rooms-catalog__item:hover .rooms-catalog-sum {
@@ -3908,6 +3930,10 @@ body section:nth-child(2n) {
 
 .rooms-catalog__item:hover .rooms-catalog__desc {
   color: #fff;
+}
+
+.rooms-catalog-col {
+  z-index: 5;
 }
 
 .rooms-catalog-col:last-child {
