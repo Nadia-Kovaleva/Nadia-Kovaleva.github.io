@@ -3850,6 +3850,10 @@ body section:nth-child(2n) {
   padding: 67px 0 119px;
 }
 
+.rooms-catalog .section__title {
+  font-weight: 200;
+}
+
 .rooms-catalog .container {
   position: relative;
 }
@@ -3948,7 +3952,7 @@ body section:nth-child(2n) {
   margin-bottom: 4px;
   font-size: 40px;
   line-height: 40px;
-  font-weight: 200;
+  font-weight: 300;
   color: #fff;
 }
 
@@ -3960,7 +3964,7 @@ body section:nth-child(2n) {
   margin-right: 60px;
   font-size: 40px;
   line-height: 40px;
-  font-weight: 200;
+  font-weight: 300;
   color: #fff;
 }
 
