@@ -902,12 +902,20 @@ if (document.querySelector(".rooms-catalog")) {
     room.addEventListener("mouseover", function () {
       var room_image_url = './images/rooms/' + room.dataset.image + '.png';
       room.style.backgroundImage = "url(" + room_image_url + ")";
-      room.nextElementSibling.classList.add("rooms-catalog__item--border-top");
+
+      if (room !== rooms[rooms.length - 1]) {
+        room.nextElementSibling.classList.add("rooms-catalog__item--border-top");
+      }
+
       room.classList.add("rooms-catalog__item--effects");
     });
     room.addEventListener("mouseout", function () {
       room.style.backgroundImage = "none";
-      room.nextElementSibling.classList.remove("rooms-catalog__item--border-top");
+
+      if (room !== rooms[rooms.length - 1]) {
+        room.nextElementSibling.classList.remove("rooms-catalog__item--border-top");
+      }
+
       room.classList.remove("rooms-catalog__item--effects");
     });
   });
