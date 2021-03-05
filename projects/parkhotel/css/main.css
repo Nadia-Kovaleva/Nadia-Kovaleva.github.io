@@ -3872,8 +3872,8 @@ body section:nth-child(2n) {
   color: #fff;
   background: #222324 no-repeat center;
   background-size: cover;
-  background-position-y: bottom;
-  transition: background-position linear 10s;
+  background-position-y: top;
+  transition: background-position linear 20s;
 }
 
 .rooms-catalog__item:before {
@@ -3900,7 +3900,7 @@ body section:nth-child(2n) {
 }
 
 .rooms-catalog__item--effects {
-  background-position-y: top;
+  background-position-y: bottom;
 }
 
 .rooms-catalog__item--effects:before {
@@ -3908,7 +3908,7 @@ body section:nth-child(2n) {
 }
 
 .rooms-catalog__item--border-top {
-  border-top: none;
+  border-top-color: #222324;
 }
 
 .rooms-catalog__item:last-child {
@@ -3916,7 +3916,7 @@ body section:nth-child(2n) {
 }
 
 .rooms-catalog__item:hover {
-  border: none;
+  border-color: #222324;
 }
 
 .rooms-catalog__item:hover .rooms-catalog-sum {
