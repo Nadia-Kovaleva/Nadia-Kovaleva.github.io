@@ -674,7 +674,7 @@ body section:nth-child(2n) {
 
 .section-title {
   font-family: "Lato", "Open Sans", "Arial", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 60px;
   line-height: 60px;
   color: #fff;
@@ -1053,7 +1053,7 @@ body section:nth-child(2n) {
   max-width: 74%;
   font-size: 40px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .about-text-row {
@@ -1350,7 +1350,7 @@ body section:nth-child(2n) {
   border-bottom: 1px dashed #a18f57;
   font-size: 30px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
   text-decoration: none;
   color: #a18f57;
 }
@@ -1436,7 +1436,7 @@ body section:nth-child(2n) {
 .conference-info-col:first-child h2 {
   font-size: 40px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .conference-info-col:first-child p:not(.conference-info-desc),
@@ -1474,7 +1474,7 @@ body section:nth-child(2n) {
 .conference-info-title {
   font-size: 40px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .conference-info-title--gold {
@@ -1550,7 +1550,7 @@ body section:nth-child(2n) {
   justify-content: normal;
   font-size: 30px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .contacts-social-links {
@@ -1587,7 +1587,7 @@ body section:nth-child(2n) {
   margin-bottom: 5px;
   font-size: 30px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .contacts-info__item {
@@ -1618,7 +1618,7 @@ body section:nth-child(2n) {
 .contacts-info__value {
   font-size: 20px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
   color: #fff;
 }
@@ -1631,7 +1631,7 @@ body section:nth-child(2n) {
 .contacts-info__email {
   font-size: 20px;
   line-height: 20px;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
   color: #a18f57;
 }
@@ -2442,7 +2442,7 @@ body section:nth-child(2n) {
   margin-bottom: 15px;
   font-size: 30px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
   text-decoration: none;
   color: #fff;
 }
@@ -2984,7 +2984,7 @@ body section:nth-child(2n) {
   display: inline;
   font-size: 40px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
   /*text-decoration: 1px #fff solid;
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -3152,7 +3152,7 @@ body section:nth-child(2n) {
   margin-bottom: 19px;
   font-size: 40px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .restaurants-info-col:first-child p {
@@ -3181,7 +3181,7 @@ body section:nth-child(2n) {
   margin-bottom: 19px;
   font-size: 40px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .restaurants-info-title--gold {
@@ -3259,7 +3259,7 @@ body section:nth-child(2n) {
 .rest-conf__title {
   font-size: 40px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .rest-conf-slider-row {
@@ -3358,7 +3358,7 @@ body section:nth-child(2n) {
 .rest-conf-feature__value {
   font-size: 30px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .rest-conf-buttons {
@@ -3726,7 +3726,7 @@ body section:nth-child(2n) {
 .rooms-preview__title {
   font-size: 40px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
   color: #fff;
   text-decoration: none;
   background-image: linear-gradient(#fff, #fff);
@@ -3848,10 +3848,6 @@ body section:nth-child(2n) {
   width: 100%;
   max-width: 100%;
   padding: 67px 0 119px;
-}
-
-.rooms-catalog .section-title {
-  font-weight: 200;
 }
 
 .rooms-catalog .container {
@@ -4169,7 +4165,7 @@ body section:nth-child(2n) {
 .service-price-preview__title {
   font-size: 30px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
   color: #a18f57;
 }
 
@@ -4221,7 +4217,7 @@ body section:nth-child(2n) {
   margin-bottom: 4px;
   font-size: 40px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .service-price__desc {
@@ -4232,7 +4228,7 @@ body section:nth-child(2n) {
   margin-right: 60px;
   font-size: 40px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .service-price-sum--mobile {
@@ -4545,7 +4541,7 @@ body section:nth-child(2n) {
   margin-bottom: 32px;
   font-size: 30px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
   color: #a18f57;
 }
 
@@ -4597,7 +4593,7 @@ body section:nth-child(2n) {
   margin-bottom: 5px;
   font-size: 40px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .transfer-price__desc {
@@ -4608,7 +4604,7 @@ body section:nth-child(2n) {
   margin-right: 60px;
   font-size: 40px;
   line-height: 40px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .transfer-price-sum--mobile {
@@ -4713,7 +4709,7 @@ body section:nth-child(2n) {
 .welcome-content-city {
   font-size: 60px;
   line-height: 90px;
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
@@ -8767,7 +8763,7 @@ body section:nth-child(2n) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 20px;
     line-height: 20px;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
     color: #fff;
   }
@@ -9375,7 +9371,7 @@ body section:nth-child(2n) {
     display: block;
     font-size: 15px;
     line-height: 20px;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: underline;
     color: #a18f57;
   }
@@ -9432,7 +9428,7 @@ body section:nth-child(2n) {
     margin: 0;
     font-size: 20px;
     line-height: 40px;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   .contacts-info__title--shown {
@@ -9566,7 +9562,7 @@ body section:nth-child(2n) {
     padding: 12px 0 17px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     line-height: 20px;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   .footer-nav__icon {
@@ -10269,7 +10265,7 @@ body section:nth-child(2n) {
     padding: 12px 0 17px;
     font-size: 20px;
     line-height: 40px;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   .room-info-preview__title--shown {
@@ -10941,7 +10937,7 @@ body section:nth-child(2n) {
     padding: 20px 16px;
     font-size: 20px;
     line-height: 30px;
-    font-weight: 300;
+    font-weight: 400;
     background: #222224;
   }
 
