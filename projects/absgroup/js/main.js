@@ -364,9 +364,22 @@ new _import_wow_min__WEBPACK_IMPORTED_MODULE_3__.WOW().init(); //WOW.sync();
 /*!**************************************************************!*\
   !*** ./themes/absgroup/src/partials/common/header/header.js ***!
   \**************************************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+var lastPos = 0;
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 200) {
+    if ($(window).scrollTop() < lastPos) {
+      //$('.header').removeClass('header--hidden');
+      $('.header').addClass('header--show');
+    } else {
+      $('.header').removeClass('header--show'); //$('.header').addClass('header--hidden');
+    }
 
+    lastPos = $(window).scrollTop();
+  }
+});
 
 /***/ }),
 
@@ -475,8 +488,8 @@ if ($('#contacts-animation').length != 0) {
       count = wait - 1;
       numToAddEachFrame = 8; //particle color
 
-      r = 191;
-      g = 53;
+      r = 70;
+      g = 255;
       b = 140;
       rgbString = "rgba(" + r + "," + g + "," + b + ","; //partial string for color which will be completed by appending alpha value.
 

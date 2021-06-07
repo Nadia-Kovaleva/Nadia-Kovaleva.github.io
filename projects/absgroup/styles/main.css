@@ -3757,6 +3757,7 @@ template {
   margin: 72px 0 0;
   border: 1px solid #aab3bb;
   border-right: none;
+  border-bottom: none;
 }
 .parts-list__item {
   position: relative;
@@ -4046,14 +4047,33 @@ template {
   flex: 0 0 100%;
   width: 100%;
   max-width: 100%;
-  padding: 24px 0;
+  min-height: 112px;
+  background: #fff;
+  /*&--hidden {
+  	visibility: hidden;
+  }*/
 }
-.header__underline:after {
+.header__underline:before, .header__underline:after {
   display: none;
 }
 .header__lang {
   cursor: pointer;
   text-transform: uppercase;
+}
+.header--show .header-outer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header-outer {
+  top: -112px;
+  min-height: 112px;
+  min-width: 100%;
+  padding: 24px 0;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
 }
 
 .header-row {
@@ -4107,8 +4127,15 @@ template {
   align-items: flex-end;
   justify-content: space-between;
 }
-.header-nav-list__item:hover.header__underline:after, .header-nav-list__item--active.header__underline:after {
-  display: block;
+.header-nav-list__item {
+  background-image: linear-gradient(#222, #222);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.5s;
+}
+.header-nav-list__item:hover, .header-nav-list__item--active {
+  background-size: 100% 2px;
 }
 
 .mp {
@@ -4356,12 +4383,14 @@ template {
 }
 
 .welcome-media {
-  margin: 56px 0 92px;
+  max-width: 1580px;
+  margin: 56px auto 92px;
+  padding: 30px;
 }
 .welcome-media--scroll {
-  margin-left: calc((-100vw + 1520px)/2);
-  width: 100vw;
-  transition: all 0.2s ease-in;
+  max-width: 100vw;
+  padding: 0;
+  transition: all 1s ease-in;
 }
 
 .welcome-about {
@@ -4527,7 +4556,7 @@ template {
   margin-left: 92px;
 }
 .vacancy__text {
-  max-width: 565px;
+  margin-top: 56px;
   font-size: 24px;
   line-height: 32px;
   font-weight: 500;
@@ -4535,7 +4564,6 @@ template {
 .vacancy__attention {
   display: flex;
   align-items: center;
-  max-width: 605px;
   margin: 32px 0 49px;
   cursor: pointer;
   font-size: 14px;
