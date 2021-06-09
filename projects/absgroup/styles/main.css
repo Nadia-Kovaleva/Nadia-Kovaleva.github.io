@@ -3507,9 +3507,10 @@ template {
   max-width: 1580px;
   margin: 56px auto 92px;
   padding: 0 30px;
-  transition: all 0.5s ease-in;
+  transition: all 1s ease-in;
 }
 .welcome-media--scroll {
+  max-width: 100vw;
   padding: 0;
 }
 
