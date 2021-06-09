@@ -488,9 +488,9 @@ if ($('#contacts-animation').length != 0) {
       count = wait - 1;
       numToAddEachFrame = 8; //particle color
 
-      r = 70;
-      g = 255;
-      b = 140;
+      r = 20;
+      g = 189;
+      b = 184;
       rgbString = "rgba(" + r + "," + g + "," + b + ","; //partial string for color which will be completed by appending alpha value.
 
       particleAlpha = 1; //maximum alpha
